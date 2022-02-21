@@ -1,0 +1,62 @@
+@import "common.scss";
+
+#blauwasser-osm-metabox .notice,
+.bw-map-editor .notice {
+  margin: 5px 0px 2px;
+  opacity: 0;
+  height: auto;
+  max-height: 0;
+  transition: 0.5s linear all;
+}
+
+#blauwasser-osm-metabox .open,
+.bw-map-editor .open {
+  transition: 0.5s linear all;
+  opacity: 1;
+  max-height: 100px;
+}
+
+#blauwasser-osm-metabox .td-meta-box-row p {
+  padding-top: 8px;
+}
+
+#bw_osm_ship_meta .inside,
+#blauwasser-osm-metabox .inside {
+  padding: 0;
+  margin-top: 0;
+}
+
+.bw-osm-metabox-button button {
+  margin-right: 10px !important;
+}
+
+#bw-osm-code {
+  white-space: pre;
+  padding: 10px;
+  color: #fff;
+  background-color: #464646;
+  border-radius: 5px;
+  max-width: 100%;
+  display: block;
+  position: relative;
+  margin-bottom: 5px;
+
+  button {
+    position: absolute;
+    top: 7px;
+    right: 5px;
+
+    font-size: 0.9rem;
+    padding: 0.15rem;
+    background-color: #828282;
+    color: 11ee1e;
+    border: ridge 1px #7b7b7c;
+    border-radius: 5px;
+    text-shadow: #c4c4c4 0 0 2px;
+  }
+
+  button:hover {
+    cursor: pointer;
+    background-color: #bcbabb;
+  }
+}

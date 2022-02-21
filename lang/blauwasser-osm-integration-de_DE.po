@@ -1,0 +1,538 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Blauwasser OSM Integration\n"
+"POT-Creation-Date: 2022-02-21 12:11+0100\n"
+"PO-Revision-Date: 2022-02-21 12:11+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: blauwasser-osm-integration.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+"X-Poedit-SearchPathExcluded-1: node_modules\n"
+
+#: includes/class-blauwasser-osm-integration.php:243
+msgid "Now new coordinates set, nothing to save."
+msgstr "Keine neuen Koordinaten, nicht gespeichert."
+
+#: includes/class-blauwasser-osm-integration.php:244
+msgid "New coordinates set, please do not forget to save!"
+msgstr "Neue Koordinaten gewählt, nicht vergessen zu speichern!"
+
+#: includes/class-blauwasser-osm-integration.php:245
+msgid "New position saved successfully"
+msgstr "Neue Koordinaten erfolgreich gespeichert"
+
+#: includes/class-blauwasser-osm-integration.php:246
+msgid "Position deleted successfully"
+msgstr "Geotag des Beitrags gelöscht"
+
+#: includes/class-blauwasser-osm-integration.php:247
+msgid "Error saving new position:"
+msgstr "Fehler beim Speichern:"
+
+#: includes/class-blauwasser-osm-integration.php:248
+msgid "Error deleting position:"
+msgstr "Fehler beim Löschen:"
+
+#: includes/class-blauwasser-osm-integration.php:249
+msgid "Geotag (lat/lon):"
+msgstr "Geotag (Breite/Länge)"
+
+#: includes/class-blauwasser-osm-integration.php:250
+msgid "Current zoom:"
+msgstr "Aktueller Zoom:"
+
+#: includes/class-blauwasser-osm-integration.php:251
+msgid ""
+"To show a map with a marker at the geotag position in the center copy the "
+"shown shortcode into the textblock."
+msgstr ""
+"Kopiere den angezeigten Shortcode in den Textblock, um eine Karte mit einer "
+"Markierung an der Geotag-Position im Kartenmittelpunkt anzuzeigen. Die "
+"aktuell gewählte Zoomstufe wird auch zur Anzeige im Beitrag genutzt."
+
+#: includes/class-blauwasser-osm-integration.php:252
+msgid "Save"
+msgstr "Speichern"
+
+#: includes/class-blauwasser-osm-integration.php:253
+msgid "Reset geotag position"
+msgstr "Geotag des Beitrags zurücksetzen"
+
+#: includes/class-blauwasser-osm-integration.php:254
+msgid "Delete geotag from post"
+msgstr "Geotag des Beitrags löschen"
+
+#: includes/class-blauwasser-osm-integration.php:255
+#: includes/lib/class-blauwasser-osm-integration-wp-backery.php:79
+msgid "Center"
+msgstr "Mittelpunkt"
+
+#: includes/class-blauwasser-osm-integration.php:256
+#: includes/lib/class-blauwasser-osm-integration-wp-backery.php:70
+msgid "Zoom"
+msgstr "Zoom"
+
+#: includes/class-blauwasser-osm-integration.php:333
+msgid "Cloning of Blauwasser_OSM_Integration is forbidden"
+msgstr "Klonen von Blauwasser_OSM_Integration ist verboten"
+
+#: includes/class-blauwasser-osm-integration.php:343
+msgid "Unserializing instances of Blauwasser_OSM_Integration is forbidden"
+msgstr "Das de-serialisieren von Blauwasser_OSM_Integration ist verboten"
+
+#: includes/lib/class-blauwasser-osm-integration-admin-api.php:50
+#: includes/lib/class-blauwasser-osm-integration-admin-api.php:54
+msgid "L.O.A"
+msgstr "LüA"
+
+#: includes/lib/class-blauwasser-osm-integration-admin-api.php:51
+msgid "Length over all in meters."
+msgstr "Länge über Alles in Metern."
+
+#: includes/lib/class-blauwasser-osm-integration-admin-api.php:63
+#: includes/lib/class-blauwasser-osm-integration-admin-api.php:67
+msgid "L.W.L"
+msgstr "LWL"
+
+#: includes/lib/class-blauwasser-osm-integration-admin-api.php:64
+msgid "Length at the waterline."
+msgstr "Länge der Wasserlinie in Metern."
+
+#: includes/lib/class-blauwasser-osm-integration-admin-api.php:75
+#: includes/lib/class-blauwasser-osm-integration-admin-api.php:79
+msgid "Beam"
+msgstr "Breite"
+
+#: includes/lib/class-blauwasser-osm-integration-admin-api.php:76
+msgid "Beam of the ship in meters."
+msgstr "Breite des Schiffes in Metern."
+
+#: includes/lib/class-blauwasser-osm-integration-admin-api.php:88
+#: includes/lib/class-blauwasser-osm-integration-admin-api.php:92
+msgid "Draft"
+msgstr "Tiefgang"
+
+#: includes/lib/class-blauwasser-osm-integration-admin-api.php:89
+msgid "Draft of the ship in meters."
+msgstr "Breite des Schiffes in Metern."
+
+#: includes/lib/class-blauwasser-osm-integration-admin-api.php:101
+#: includes/lib/class-blauwasser-osm-integration-admin-api.php:105
+msgid "Mainsail"
+msgstr "Großsegel"
+
+#: includes/lib/class-blauwasser-osm-integration-admin-api.php:102
+msgid "Normal mainsail area of the ship in square meters."
+msgstr "Normale Großsegelfläche des Schiffes in Quadratmetern."
+
+#: includes/lib/class-blauwasser-osm-integration-admin-api.php:114
+#: includes/lib/class-blauwasser-osm-integration-admin-api.php:118
+msgid "Jib"
+msgstr "Fock"
+
+#: includes/lib/class-blauwasser-osm-integration-admin-api.php:115
+msgid "Normal jib area of the ship in square meters."
+msgstr "Normale Focksegelgröße des Schiffes in Metern."
+
+#: includes/lib/class-blauwasser-osm-integration-admin-api.php:127
+#: includes/lib/class-blauwasser-osm-integration-admin-api.php:131
+msgid "Fresh water tank"
+msgstr "Frischwassertank"
+
+#: includes/lib/class-blauwasser-osm-integration-admin-api.php:128
+msgid "Size of the water tank in liters."
+msgstr "Größe des Wassertanks in Litern."
+
+#: includes/lib/class-blauwasser-osm-integration-admin-api.php:140
+#: includes/lib/class-blauwasser-osm-integration-admin-api.php:144
+msgid "Fuel tank"
+msgstr "Kraftstofftank"
+
+#: includes/lib/class-blauwasser-osm-integration-admin-api.php:141
+msgid "Size of the fuel tank in liters."
+msgstr "Größe des Kraftstofftanks in Litern."
+
+#: includes/lib/class-blauwasser-osm-integration-admin-api.php:153
+#: includes/lib/class-blauwasser-osm-integration-admin-api.php:157
+msgid "Displacement"
+msgstr "Verdrängung"
+
+#: includes/lib/class-blauwasser-osm-integration-admin-api.php:154
+msgid "Displacement in kilogram."
+msgstr "Verdrängung in Kilogramm."
+
+#: includes/lib/class-blauwasser-osm-integration-admin-api.php:166
+#: includes/lib/class-blauwasser-osm-integration-admin-api.php:170
+msgid "Ballast"
+msgstr "Ballast"
+
+#: includes/lib/class-blauwasser-osm-integration-admin-api.php:167
+msgid "Ballast in kilogram."
+msgstr "Ballast in Kilogramm."
+
+#: includes/lib/class-blauwasser-osm-integration-admin-api.php:210
+#: includes/lib/class-blauwasser-osm-integration-wp-backery.php:59
+msgid "Blauwasser Map"
+msgstr "Blauwasser-Karte"
+
+#: includes/lib/class-blauwasser-osm-integration-admin-api.php:397
+msgid "Upload an image"
+msgstr "Bild hochladen"
+
+#: includes/lib/class-blauwasser-osm-integration-admin-api.php:397
+msgid "Use image"
+msgstr "Bild verwenden"
+
+#: includes/lib/class-blauwasser-osm-integration-admin-api.php:397
+msgid "Upload new image"
+msgstr "Neues Bild hochladen"
+
+#: includes/lib/class-blauwasser-osm-integration-admin-api.php:398
+msgid "Remove image"
+msgstr "Bild entfernen"
+
+#: includes/lib/class-blauwasser-osm-integration-rest-api.php:156
+msgid "Categories to search for."
+msgstr "Kategorien, nach denen gesucht werden soll."
+
+#: includes/lib/class-blauwasser-osm-integration-rest-api.php:163
+msgid "Tags to search for."
+msgstr "Tags, nach denen gesucht werden soll."
+
+#: includes/lib/class-blauwasser-osm-integration-rest-api.php:170
+msgid "Taxonomies to search for."
+msgstr "Taxonomien, nach denen gesucht werden soll."
+
+#: includes/lib/class-blauwasser-osm-integration-rest-api.php:196
+#, php-format
+msgid "%1$s is not of type %2$s"
+msgstr "%1$s ist nicht vom Typ %2$s"
+
+#: includes/lib/class-blauwasser-osm-integration-rest-api.php:201
+#: includes/lib/class-blauwasser-osm-integration-rest-api.php:229
+#, php-format
+msgid "%s was not registered as a request argument."
+msgstr "%s wurde nicht als Anfrageargument registriert."
+
+#: includes/lib/class-blauwasser-osm-integration-rest-api.php:233
+msgid "Something went terribly wrong."
+msgstr "Irgendetwas ist furchtbar schief gelaufen."
+
+#: includes/lib/class-blauwasser-osm-integration-settings.php:137
+#: includes/lib/class-blauwasser-osm-integration-settings.php:138
+msgid "BW OSM"
+msgstr "Blauwasser Map"
+
+#: includes/lib/class-blauwasser-osm-integration-settings.php:189
+msgid "Settings"
+msgstr "Einstellungen"
+
+#: includes/lib/class-blauwasser-osm-integration-settings.php:202
+msgid "Standard"
+msgstr "Standard"
+
+#: includes/lib/class-blauwasser-osm-integration-settings.php:203
+msgid "Settings for OSM integration."
+msgstr "Einstellungen für die OSM-Integration."
+
+#: includes/lib/class-blauwasser-osm-integration-settings.php:207
+msgid "maptiler key"
+msgstr "maptiler API-Key"
+
+#: includes/lib/class-blauwasser-osm-integration-settings.php:208
+msgid ""
+"API key for maptiler cloud. Visit <a href=\"https://cloud.maptiler.com"
+"\">maptiler cloud</a> to create an API key."
+msgstr ""
+"API-Schlüssel für maptiler cloud. Besuchen Sie <a href=\"https://cloud."
+"maptiler.com\">maptiler cloud</a> , um einen API-Schlüssel zu erstellen."
+
+#: includes/lib/class-blauwasser-osm-integration-settings.php:211
+msgid "API key"
+msgstr "API-Key"
+
+#: includes/lib/class-blauwasser-osm-integration-settings.php:215
+msgid "maptiler map style"
+msgstr "maptiler Kartenstil"
+
+#: includes/lib/class-blauwasser-osm-integration-settings.php:216
+msgid "Choose a map style."
+msgstr "Wählen Sie einen Kartenstil aus."
+
+#: includes/lib/class-blauwasser-osm-integration-settings.php:233
+msgid "Default zoom"
+msgstr "Standard-Zoom"
+
+#: includes/lib/class-blauwasser-osm-integration-settings.php:234
+msgid "Default zoom level for maps."
+msgstr "Standardzoomstufe für Karten."
+
+#: includes/lib/class-blauwasser-osm-integration-settings.php:243
+msgid "Default latitude"
+msgstr "Standard Breitengrad"
+
+#: includes/lib/class-blauwasser-osm-integration-settings.php:244
+msgid "Default center latitude for maps (WGS84)."
+msgstr "Standardmäßiger mittlerer Breitengrad für Karten (WGS84)."
+
+#: includes/lib/class-blauwasser-osm-integration-settings.php:254
+msgid "Default longitude"
+msgstr "Standard-Längengrad"
+
+#: includes/lib/class-blauwasser-osm-integration-settings.php:255
+msgid "Default center longitude for maps (WGS84)."
+msgstr "Standardmäßiger mittlerer Längengrad für Karten (WGS84)."
+
+#: includes/lib/class-blauwasser-osm-integration-settings.php:356
+msgid "Plugin Settings"
+msgstr "Plugin Einstellungen"
+
+#: includes/lib/class-blauwasser-osm-integration-settings.php:410
+msgid "Save Settings"
+msgstr "Einstellungen speichern"
+
+#: includes/lib/class-blauwasser-osm-integration-settings.php:444
+msgid "Cloning of Blauwasser_OSM_Integration_API is forbidden."
+msgstr "Das Klonen von Blauwasser_OSM_Integration_API ist verboten."
+
+#: includes/lib/class-blauwasser-osm-integration-settings.php:454
+msgid "Unserializing instances of Blauwasser_OSM_Integration_API is forbidden."
+msgstr "Unsialisierende Fälle von Blauwasser_OSM_Integration_API ist verboten."
+
+#: includes/lib/class-blauwasser-osm-integration-wp-backery.php:62
+msgid "Content"
+msgstr "Inhalt"
+
+#: includes/lib/class-blauwasser-osm-integration-wp-backery.php:73
+msgid "Map zoom level."
+msgstr "Zoomstufe der Karte."
+
+#: includes/lib/class-blauwasser-osm-integration-wp-backery.php:82
+msgid "Coordinates of the map center."
+msgstr "Koordinaten für den Kartenmittelpunkt."
+
+#: includes/lib/class-blauwasser-osm-integration-wp-backery.php:86
+msgid "Filter posts"
+msgstr "Filter für die Marker in der Karte"
+
+#: includes/lib/class-blauwasser-osm-integration-wp-backery.php:104
+msgid "Enter categories, tags or custom taxonomies."
+msgstr "Kategorien, Schlagwörter oder eigene Taxonomie eingeben."
+
+#: includes/lib/class-blauwasser-osm-integration-wp-backery.php:110
+msgid "Map preview"
+msgstr "Kartenvorschau"
+
+#: includes/lib/class-blauwasser-osm-integration-wp-backery.php:113
+msgid "Map preview. Adjust size and zoom and save."
+msgstr ""
+"Der aktuelle Kartenausschnitt und die Zoomstufe werden beim Speichern "
+"übernommen und zur Anzeige im Beitrag genutzt."
+
+#. Plugin Name of the plugin/theme
+msgid "Blauwasser Maps"
+msgstr "Blauwasser Karten"
+
+#. Plugin URI of the plugin/theme
+msgid "https://www.blauwasser.de/"
+msgstr "https://www.blauwasser.de/"
+
+#. Description of the plugin/theme
+msgid "OpenSeaMap integration for blauwasser.de."
+msgstr "OpenSeaMap-Integration für blauwasser.de."
+
+#. Author of the plugin/theme
+msgid "Jan Singer"
+msgstr "Jan Singer"
+
+#. Author URI of the plugin/theme
+msgid "https://www.singer-tc.de/"
+msgstr "https://www.singer-tc.de/"
+
+#~ msgid "13"
+#~ msgstr "13"
+
+#~ msgid "54.5126"
+#~ msgstr "54.5126"
+
+#~ msgid "13.6456"
+#~ msgstr "13.6456"
+
+#~ msgid "Blauwasser OSM Integration"
+#~ msgstr "Blauwasser-Karten"
+
+#, php-format
+#~ msgid "Add New %s"
+#~ msgstr "Neues %s hinzufügen"
+
+#, php-format
+#~ msgid "Edit %s"
+#~ msgstr "%s bearbeiten"
+
+#, php-format
+#~ msgid "New %s"
+#~ msgstr "Neues %s"
+
+#, php-format
+#~ msgid "All %s"
+#~ msgstr "Alle %s"
+
+#, php-format
+#~ msgid "View %s"
+#~ msgstr "%s anzeigen"
+
+#, php-format
+#~ msgid "Search %s"
+#~ msgstr "%s suchen"
+
+#, php-format
+#~ msgid "No %s Found"
+#~ msgstr "Keine %s gefunden"
+
+#, php-format
+#~ msgid "No %s Found In Trash"
+#~ msgstr "Keine %s im Papierkorb gefunden"
+
+#, php-format
+#~ msgid "Parent %s"
+#~ msgstr "Übergeordnetes %s"
+
+#, php-format
+#~ msgid "%1$s updated. %2$sView %3$s%4$s."
+#~ msgstr "%1$s aktualisiert. %2$sSiehe hier %3$s%4$s."
+
+#~ msgid "Custom field updated."
+#~ msgstr "Benutzerdefiniertes Feld aktualisiert."
+
+#~ msgid "Custom field deleted."
+#~ msgstr "Benutzerdefiniertes Feld gelöscht."
+
+#, php-format
+#~ msgid "%1$s updated."
+#~ msgstr "%1$s aktualisiert."
+
+#, php-format
+#~ msgid "%1$s restored to revision from %2$s."
+#~ msgstr "wurde von %1$s auf Revision %2$s zurückgesetzt."
+
+#, php-format
+#~ msgid "%1$s published. %2$sView %3$s%4s."
+#~ msgstr "%1$s veröffentlicht. %2$sBetrachte %3$s%4s."
+
+#, php-format
+#~ msgid "%1$s saved."
+#~ msgstr "%1$s gespeichert."
+
+#, php-format
+#~ msgid "%1$s submitted. %2$sPreview post%3$s%4$s."
+#~ msgstr "%1$s übermittelt. %2$sBetrachte den Beitrag%3$s%4$s."
+
+#, php-format
+#~ msgid "%1$s scheduled for: %2$s. %3$sPreview %4$s%5$s."
+#~ msgstr "%1$s geplant für: %2$s. %3$sVorschau %4$s%5$s."
+
+#~ msgid "M j, Y @ G:i"
+#~ msgstr "d.m.Y @ G:i"
+
+#, php-format
+#~ msgid "%1$s draft updated. %2$sPreview %3$s%4$s."
+#~ msgstr "%1$s Entwurf aktualisiert. %2$sVorschau %3$s%4$s."
+
+#, php-format
+#~ msgid "%1$s %2$s updated."
+#~ msgid_plural "%1$s %3$s updated."
+#~ msgstr[0] "%1$s %2$s aktualisiert."
+#~ msgstr[1] "%1$s %3$s aktualisiert."
+
+#, php-format
+#~ msgid "%1$s %2$s not updated, somebody is editing it."
+#~ msgid_plural "%1$s %3$s not updated, somebody is editing them."
+#~ msgstr[0] "%1$s %2$s nicht aktualisiert, jemand bearbeitet es."
+#~ msgstr[1] "%1$s %3$s nicht aktualisiert, jemand bearbeitet es."
+
+#, php-format
+#~ msgid "%1$s %2$s permanently deleted."
+#~ msgid_plural "%1$s %3$s permanently deleted."
+#~ msgstr[0] "%1$s %2$s permanent gelöscht."
+#~ msgstr[1] "%1$s %3$s permanent gelöscht."
+
+#, php-format
+#~ msgid "%1$s %2$s moved to the Trash."
+#~ msgid_plural "%1$s %3$s moved to the Trash."
+#~ msgstr[0] "%1$s %2$s in den Papierkorb verschoben."
+#~ msgstr[1] "%1$s %3$s in den Papierkorb verschoben."
+
+#, php-format
+#~ msgid "%1$s %2$s restored from the Trash."
+#~ msgid_plural "%1$s %3$s restored from the Trash."
+#~ msgstr[0] "%1$s %2$s aus dem Papierkorb wiederhergestellt."
+#~ msgstr[1] "%1$s %3$s aus dem Papierkorb wiederhergestellt."
+
+#, php-format
+#~ msgid "Update %s"
+#~ msgstr "%s aktualisieren"
+
+#, php-format
+#~ msgid "New %s Name"
+#~ msgstr "Neues %s"
+
+#, php-format
+#~ msgid "Parent %s:"
+#~ msgstr "Übergeordnetes %s"
+
+#, php-format
+#~ msgid "Popular %s"
+#~ msgstr "Populäres %s"
+
+#, php-format
+#~ msgid "Separate %s with commas"
+#~ msgstr "%s mit Komma trennen"
+
+#, php-format
+#~ msgid "Add or remove %s"
+#~ msgstr "%s hinzufügen oder entfernen"
+
+#, php-format
+#~ msgid "Choose from the most used %s"
+#~ msgstr "Aus den meist verwendeten %s wählen"
+
+#, php-format
+#~ msgid "No %s found"
+#~ msgstr "Kein %s gefunden"
+
+#~ msgid "Ships"
+#~ msgstr "Schiffe"
+
+#~ msgid "Ship"
+#~ msgstr "Schiff"
+
+#~ msgid "Shipyards"
+#~ msgstr "Werften"
+
+#~ msgid "Shipyard"
+#~ msgstr "Werft"
+
+#~ msgid "Shiptype"
+#~ msgstr "Schiffstyp"
+
+#~ msgid "Ship Metadata"
+#~ msgstr "Schiffsdaten"
+
+#~ msgid "LoA"
+#~ msgstr "LüA"
+
+#~ msgid "Delete"
+#~ msgstr "Löschen"
