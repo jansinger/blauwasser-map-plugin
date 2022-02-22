@@ -1,1 +1,1 @@
-export const { settings, lang } = bwOsmPlugin;
+export const { settings, lang } = bwMapPlugin;

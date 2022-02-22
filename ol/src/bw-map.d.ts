@@ -1,8 +1,8 @@
-interface BwOsmPlugin {
+interface BwMapPlugin {
   settings: Settings;
   data: MapInstance[];
   lang: Record<string, string>;
 }
-declare const bwOsmPlugin: BwOsmPlugin;
+declare const bwMapPlugin: BwMapPlugin;
 
 declare const ajaxurl: string;

@@ -13,7 +13,7 @@ if (!defined('ABSPATH')) {
 /**
  * Post type declaration class.
  */
-class Blauwasser_OSM_Integration_Shortcode
+class Blauwasser_map_plugin_Shortcode
 {
 
 	/**
@@ -170,10 +170,10 @@ class Blauwasser_OSM_Integration_Shortcode
 			$atts['src'] = esc_url(get_rest_url()) . 'blauwasser-map/v1/geo?' . $query;
 		}
 
-		wp_enqueue_style(Blauwasser_OSM_Integration::$token . '-map');
-		wp_register_script($atts['elementId'], false, array(Blauwasser_OSM_Integration::$token . '-map', Blauwasser_OSM_Integration::$token . '-settings'), false, true);
+		wp_enqueue_style(Blauwasser_map_plugin::$token . '-map');
+		wp_register_script($atts['elementId'], false, array(Blauwasser_map_plugin::$token . '-map', Blauwasser_map_plugin::$token . '-settings'), false, true);
 		wp_enqueue_script($atts['elementId']);
-		$script = 'bwOsmPlugin && bwOsmPlugin.data.push(' . json_encode($atts) . '); ';
+		$script = 'bwMapPlugin && bwMapPlugin.data.push(' . json_encode($atts) . '); ';
 		wp_add_inline_script($atts['elementId'], $script, 'before');
 
 		$custom_css = "width: {$atts['width']}; height: {$atts['height']};";

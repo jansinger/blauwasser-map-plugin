@@ -22,9 +22,9 @@ export default defineConfig({
     emptyOutDir: false,
     lib: {
       entry: path.resolve(__dirname, "ol/src/main.ts"),
-      name: "bwOsm",
+      name: "bwMap",
       formats: ["umd"],
-      fileName: (format) => `bw-osm.${format}.js`,
+      fileName: (format) => `bw-map.${format}.js`,
     },
   },
 });

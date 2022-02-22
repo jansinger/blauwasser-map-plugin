@@ -4,7 +4,7 @@ import WpEditorMap from "./components/WpEditorMap.svelte";
 
 export const showAdminMap = (data: { center: number[]; nonce: string }) => {
   return new Metabox({
-    target: document.getElementById("bw-osm-svelte"),
+    target: document.getElementById("bw-map-svelte"),
     props: { ...data },
   });
 };
@@ -18,7 +18,7 @@ export const showEditorMap = (parent: HTMLElement, target: HTMLElement) => {
 
 /* @ts-ignore */
 if (import.meta.env.DEV && window) {
-  window["bwOsm"] = {
+  window["bwMap"] = {
     showAdminMap,
     showEditorMap,
   };

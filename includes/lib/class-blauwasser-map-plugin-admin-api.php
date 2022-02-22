@@ -13,7 +13,7 @@ if (!defined('ABSPATH')) {
 /**
  * Admin API class.
  */
-class Blauwasser_OSM_Integration_Admin_API
+class Blauwasser_map_plugin_Admin_API
 {
 
 	/**
@@ -47,11 +47,11 @@ class Blauwasser_OSM_Integration_Admin_API
 			array(
 				'metabox' 	  => 'bw_osm_ship_meta',
 				'id'          => 'bw_ship_loa',
-				'label'       => __('L.O.A', Blauwasser_OSM_Integration::$textdomain),
-				'description' => __('Length over all in meters.', Blauwasser_OSM_Integration::$textdomain),
+				'label'       => __('L.O.A', Blauwasser_map_plugin::$textdomain),
+				'description' => __('Length over all in meters.', Blauwasser_map_plugin::$textdomain),
 				'type'        => 'number',
 				'default'     => '',
-				'placeholder' => __('L.O.A', Blauwasser_OSM_Integration::$textdomain),
+				'placeholder' => __('L.O.A', Blauwasser_map_plugin::$textdomain),
 				'min'		  => '0',
 				'max' 		  => '1000',
 				'step' 		  => '.01',
@@ -60,11 +60,11 @@ class Blauwasser_OSM_Integration_Admin_API
 			array(
 				'metabox' 	  => 'bw_osm_ship_meta',
 				'id'          => 'bw_ship_lwl',
-				'label'       => __('L.W.L', Blauwasser_OSM_Integration::$textdomain),
-				'description' => __('Length at the waterline.', Blauwasser_OSM_Integration::$textdomain),
+				'label'       => __('L.W.L', Blauwasser_map_plugin::$textdomain),
+				'description' => __('Length at the waterline.', Blauwasser_map_plugin::$textdomain),
 				'type'        => 'number',
 				'default'     => '',
-				'placeholder' => __('L.W.L', Blauwasser_OSM_Integration::$textdomain),
+				'placeholder' => __('L.W.L', Blauwasser_map_plugin::$textdomain),
 				'min'		  => '0',
 				'max' 		  => '1000',
 				'step' 		  => '.01'
@@ -72,11 +72,11 @@ class Blauwasser_OSM_Integration_Admin_API
 			array(
 				'metabox' 	  => 'bw_osm_ship_meta',
 				'id'          => 'bw_ship_beam',
-				'label'       => __('Beam', Blauwasser_OSM_Integration::$textdomain),
-				'description' => __('Beam of the ship in meters.', Blauwasser_OSM_Integration::$textdomain),
+				'label'       => __('Beam', Blauwasser_map_plugin::$textdomain),
+				'description' => __('Beam of the ship in meters.', Blauwasser_map_plugin::$textdomain),
 				'type'        => 'number',
 				'default'     => '',
-				'placeholder' => __('Beam', Blauwasser_OSM_Integration::$textdomain),
+				'placeholder' => __('Beam', Blauwasser_map_plugin::$textdomain),
 				'min'		  => '0',
 				'max' 		  => '100',
 				'step' 		  => '.01',
@@ -85,11 +85,11 @@ class Blauwasser_OSM_Integration_Admin_API
 			array(
 				'metabox' 	  => 'bw_osm_ship_meta',
 				'id'          => 'bw_ship_draft',
-				'label'       => __('Draft', Blauwasser_OSM_Integration::$textdomain),
-				'description' => __('Draft of the ship in meters.', Blauwasser_OSM_Integration::$textdomain),
+				'label'       => __('Draft', Blauwasser_map_plugin::$textdomain),
+				'description' => __('Draft of the ship in meters.', Blauwasser_map_plugin::$textdomain),
 				'type'        => 'number',
 				'default'     => '',
-				'placeholder' => __('Draft', Blauwasser_OSM_Integration::$textdomain),
+				'placeholder' => __('Draft', Blauwasser_map_plugin::$textdomain),
 				'min'		  => '0',
 				'max' 		  => '50',
 				'step' 		  => '.01',
@@ -98,11 +98,11 @@ class Blauwasser_OSM_Integration_Admin_API
 			array(
 				'metabox' 	  => 'bw_osm_ship_meta',
 				'id'          => 'bw_ship_mainsail_area',
-				'label'       => __('Mainsail', Blauwasser_OSM_Integration::$textdomain),
-				'description' => __('Normal mainsail area of the ship in square meters.', Blauwasser_OSM_Integration::$textdomain),
+				'label'       => __('Mainsail', Blauwasser_map_plugin::$textdomain),
+				'description' => __('Normal mainsail area of the ship in square meters.', Blauwasser_map_plugin::$textdomain),
 				'type'        => 'number',
 				'default'     => '',
-				'placeholder' => __('Mainsail', Blauwasser_OSM_Integration::$textdomain),
+				'placeholder' => __('Mainsail', Blauwasser_map_plugin::$textdomain),
 				'min'		  => '0',
 				'max' 		  => '5000',
 				'step' 		  => '.01',
@@ -111,11 +111,11 @@ class Blauwasser_OSM_Integration_Admin_API
 			array(
 				'metabox' 	  => 'bw_osm_ship_meta',
 				'id'          => 'bw_ship_jib_area',
-				'label'       => __('Jib', Blauwasser_OSM_Integration::$textdomain),
-				'description' => __('Normal jib area of the ship in square meters.', Blauwasser_OSM_Integration::$textdomain),
+				'label'       => __('Jib', Blauwasser_map_plugin::$textdomain),
+				'description' => __('Normal jib area of the ship in square meters.', Blauwasser_map_plugin::$textdomain),
 				'type'        => 'number',
 				'default'     => '',
-				'placeholder' => __('Jib', Blauwasser_OSM_Integration::$textdomain),
+				'placeholder' => __('Jib', Blauwasser_map_plugin::$textdomain),
 				'min'		  => '0',
 				'max' 		  => '5000',
 				'step' 		  => '.01',
@@ -124,11 +124,11 @@ class Blauwasser_OSM_Integration_Admin_API
 			array(
 				'metabox' 	  => 'bw_osm_ship_meta',
 				'id'          => 'bw_ship_fresh_water_tank',
-				'label'       => __('Fresh water tank', Blauwasser_OSM_Integration::$textdomain),
-				'description' => __('Size of the water tank in liters.', Blauwasser_OSM_Integration::$textdomain),
+				'label'       => __('Fresh water tank', Blauwasser_map_plugin::$textdomain),
+				'description' => __('Size of the water tank in liters.', Blauwasser_map_plugin::$textdomain),
 				'type'        => 'number',
 				'default'     => '',
-				'placeholder' => __('Fresh water tank', Blauwasser_OSM_Integration::$textdomain),
+				'placeholder' => __('Fresh water tank', Blauwasser_map_plugin::$textdomain),
 				'min'		  => '0',
 				'max' 		  => '10000',
 				'step' 		  => '.01',
@@ -137,11 +137,11 @@ class Blauwasser_OSM_Integration_Admin_API
 			array(
 				'metabox' 	  => 'bw_osm_ship_meta',
 				'id'          => 'bw_ship_fuel_tank',
-				'label'       => __('Fuel tank', Blauwasser_OSM_Integration::$textdomain),
-				'description' => __('Size of the fuel tank in liters.', Blauwasser_OSM_Integration::$textdomain),
+				'label'       => __('Fuel tank', Blauwasser_map_plugin::$textdomain),
+				'description' => __('Size of the fuel tank in liters.', Blauwasser_map_plugin::$textdomain),
 				'type'        => 'number',
 				'default'     => '',
-				'placeholder' => __('Fuel tank', Blauwasser_OSM_Integration::$textdomain),
+				'placeholder' => __('Fuel tank', Blauwasser_map_plugin::$textdomain),
 				'min'		  => '0',
 				'max' 		  => '10000',
 				'step' 		  => '.01',
@@ -150,11 +150,11 @@ class Blauwasser_OSM_Integration_Admin_API
 			array(
 				'metabox' 	  => 'bw_osm_ship_meta',
 				'id'          => 'bw_ship_displacement',
-				'label'       => __('Displacement', Blauwasser_OSM_Integration::$textdomain),
-				'description' => __('Displacement in kilogram.', Blauwasser_OSM_Integration::$textdomain),
+				'label'       => __('Displacement', Blauwasser_map_plugin::$textdomain),
+				'description' => __('Displacement in kilogram.', Blauwasser_map_plugin::$textdomain),
 				'type'        => 'number',
 				'default'     => '',
-				'placeholder' => __('Displacement', Blauwasser_OSM_Integration::$textdomain),
+				'placeholder' => __('Displacement', Blauwasser_map_plugin::$textdomain),
 				'min'		  => '0',
 				'max' 		  => '100000',
 				'step' 		  => '.01',
@@ -163,11 +163,11 @@ class Blauwasser_OSM_Integration_Admin_API
 			array(
 				'metabox' 	  => 'bw_osm_ship_meta',
 				'id'          => 'bw_ship_ballast',
-				'label'       => __('Ballast', Blauwasser_OSM_Integration::$textdomain),
-				'description' => __('Ballast in kilogram.', Blauwasser_OSM_Integration::$textdomain),
+				'label'       => __('Ballast', Blauwasser_map_plugin::$textdomain),
+				'description' => __('Ballast in kilogram.', Blauwasser_map_plugin::$textdomain),
 				'type'        => 'number',
 				'default'     => '',
-				'placeholder' => __('Ballast', Blauwasser_OSM_Integration::$textdomain),
+				'placeholder' => __('Ballast', Blauwasser_map_plugin::$textdomain),
 				'min'		  => '0',
 				'max' 		  => '100000',
 				'step' 		  => '.01',
@@ -229,19 +229,18 @@ class Blauwasser_OSM_Integration_Admin_API
 			$center = $this->parent->defaultSettings['center'];
 		}
 
-
 		// Svelte App
-		echo '<div id="bw-osm-svelte"></div>';
+		echo '<div id="bw-map-svelte"></div>';
 
 		$data = array(
 			'center' => $center,
 			'nonce' => wp_create_nonce('geotag_nonce')
 		);
 
-		wp_enqueue_style(Blauwasser_OSM_Integration::$token . '-map-admin');
-		wp_register_script($elementId, false, array(Blauwasser_OSM_Integration::$token . '-map-admin', Blauwasser_OSM_Integration::$token . '-settings'), false, true);
+		wp_enqueue_style(Blauwasser_map_plugin::$token . '-map-admin');
+		wp_register_script($elementId, false, array(Blauwasser_map_plugin::$token . '-map-admin', Blauwasser_map_plugin::$token . '-settings'), false, true);
 		wp_enqueue_script($elementId);
-		$script = 'window.addEventListener("load", function () { bwOsm && bwOsm.showAdminMap(' . json_encode($data) . '); });';
+		$script = 'window.addEventListener("load", function () { bwMap && bwMap.showAdminMap(' . json_encode($data) . '); });';
 		wp_add_inline_script($elementId, $script, 'after');
 	}
 
@@ -394,8 +393,8 @@ class Blauwasser_OSM_Integration_Admin_API
 					$image_thumb = wp_get_attachment_thumb_url($data);
 				}
 				$html .= '<img id="' . $option_name . '_preview" class="image_preview" src="' . $image_thumb . '" /><br/>' . "\n";
-				$html .= '<input id="' . $option_name . '_button" type="button" data-uploader_title="' . __('Upload an image', 'blauwasser-osm-integration') . '" data-uploader_button_text="' . __('Use image', 'blauwasser-osm-integration') . '" class="image_upload_button button" value="' . __('Upload new image', 'blauwasser-osm-integration') . '" />' . "\n";
-				$html .= '<input id="' . $option_name . '_delete" type="button" class="image_delete_button button" value="' . __('Remove image', 'blauwasser-osm-integration') . '" />' . "\n";
+				$html .= '<input id="' . $option_name . '_button" type="button" data-uploader_title="' . __('Upload an image', 'blauwasser-map-plugin') . '" data-uploader_button_text="' . __('Use image', 'blauwasser-map-plugin') . '" class="image_upload_button button" value="' . __('Upload new image', 'blauwasser-map-plugin') . '" />' . "\n";
+				$html .= '<input id="' . $option_name . '_delete" type="button" class="image_delete_button button" value="' . __('Remove image', 'blauwasser-map-plugin') . '" />' . "\n";
 				$html .= '<input id="' . $option_name . '" class="image_data_field" type="hidden" name="' . $option_name . '" value="' . $data . '"/><br/>' . "\n";
 				break;
 
@@ -516,7 +515,7 @@ class Blauwasser_OSM_Integration_Admin_API
 			return;
 		}
 
-		wp_enqueue_style(Blauwasser_OSM_Integration::$token . '-map');
+		wp_enqueue_style(Blauwasser_map_plugin::$token . '-map');
 
 		echo '<div class="td-meta-box-inside">' . "\n";
 		echo '<div class="td-page-option-panel td-post-option-ship td-page-option-panel-active">' . "\n";

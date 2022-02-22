@@ -1,2 +1,0 @@
-<?php
-define('BLAUWASSER_OSM_INTEGRATION_VERSION', '0.3.7');

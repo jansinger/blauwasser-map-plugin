@@ -13,11 +13,11 @@ if (!defined('ABSPATH')) {
 /**
  * Settings class.
  */
-class Blauwasser_OSM_Integration_Settings
+class Blauwasser_map_plugin_Settings
 {
 
 	/**
-	 * The single instance of Blauwasser_OSM_Integration_Settings.
+	 * The single instance of Blauwasser_map_plugin_Settings.
 	 *
 	 * @var     object
 	 * @access  private
@@ -134,10 +134,10 @@ class Blauwasser_OSM_Integration_Settings
 			array(
 				'location'    => 'options', // Possible settings: options, menu, submenu.
 				'parent_slug' => 'options-general.php',
-				'page_title'  => __('BW OSM', 'blauwasser-osm-integration'),
-				'menu_title'  => __('BW OSM', 'blauwasser-osm-integration'),
+				'page_title'  => __('BW OSM', 'blauwasser-map-plugin'),
+				'menu_title'  => __('BW OSM', 'blauwasser-map-plugin'),
 				'capability'  => 'manage_options',
-				'menu_slug'   => Blauwasser_OSM_Integration::$token . '_settings',
+				'menu_slug'   => Blauwasser_map_plugin::$token . '_settings',
 				'function'    => array($this, 'settings_page'),
 				'icon_url'    => '',
 				'position'    => null,
@@ -174,8 +174,8 @@ class Blauwasser_OSM_Integration_Settings
 		// If you're not including an image upload then you can leave this function call out.
 		wp_enqueue_media();
 
-		wp_register_script(Blauwasser_OSM_Integration::$token . '-settings-js', $this->parent->assets_url . 'js/settings.min.js', array('farbtastic', 'jquery'), '1.0.0', true);
-		wp_enqueue_script(Blauwasser_OSM_Integration::$token . '-settings-js');
+		wp_register_script(Blauwasser_map_plugin::$token . '-settings-js', $this->parent->assets_url . 'js/settings.min.js', array('farbtastic', 'jquery'), '1.0.0', true);
+		wp_enqueue_script(Blauwasser_map_plugin::$token . '-settings-js');
 	}
 
 	/**
@@ -186,7 +186,7 @@ class Blauwasser_OSM_Integration_Settings
 	 */
 	public function add_settings_link($links)
 	{
-		$settings_link = '<a href="options-general.php?page=' . Blauwasser_OSM_Integration::$token . '_settings">' . __('Settings', 'blauwasser-osm-integration') . '</a>';
+		$settings_link = '<a href="options-general.php?page=' . Blauwasser_map_plugin::$token . '_settings">' . __('Settings', 'blauwasser-map-plugin') . '</a>';
 		array_push($links, $settings_link);
 		return $links;
 	}
@@ -199,21 +199,21 @@ class Blauwasser_OSM_Integration_Settings
 	private function settings_fields()
 	{
 		$settings['standard'] = array(
-			'title'       => __('Standard', 'blauwasser-osm-integration'),
-			'description' => __('Settings for OSM integration.', 'blauwasser-osm-integration'),
+			'title'       => __('Standard', 'blauwasser-map-plugin'),
+			'description' => __('Settings for OSM integration.', 'blauwasser-map-plugin'),
 			'fields'      => array(
 				array(
 					'id'          => 'maptiler_key',
-					'label'       => __('maptiler key', 'blauwasser-osm-integration'),
-					'description' => __('API key for maptiler cloud. Visit <a href="https://cloud.maptiler.com">maptiler cloud</a> to create an API key.', 'blauwasser-osm-integration'),
+					'label'       => __('maptiler key', 'blauwasser-map-plugin'),
+					'description' => __('API key for maptiler cloud. Visit <a href="https://cloud.maptiler.com">maptiler cloud</a> to create an API key.', 'blauwasser-map-plugin'),
 					'type'        => 'text',
 					'default'     => '',
-					'placeholder' => __('API key', 'blauwasser-osm-integration'),
+					'placeholder' => __('API key', 'blauwasser-map-plugin'),
 				),
 				array(
 					'id'          => 'maptiler_style',
-					'label'       => __('maptiler map style', 'blauwasser-osm-integration'),
-					'description' => __('Choose a map style.', 'blauwasser-osm-integration'),
+					'label'       => __('maptiler map style', 'blauwasser-map-plugin'),
+					'description' => __('Choose a map style.', 'blauwasser-map-plugin'),
 					'type'        => 'select',
 					'options'     => array(
 						'basic' 	=> 'basic',
@@ -230,8 +230,8 @@ class Blauwasser_OSM_Integration_Settings
 				),
 				array(
 					'id'          => 'default_zoom',
-					'label'       => __('Default zoom', 'blauwasser-osm-integration'),
-					'description' => __('Default zoom level for maps.', 'blauwasser-osm-integration'),
+					'label'       => __('Default zoom', 'blauwasser-map-plugin'),
+					'description' => __('Default zoom level for maps.', 'blauwasser-map-plugin'),
 					'type'        => 'number',
 					'default'     => '13',
 					'placeholder' => '13',
@@ -240,8 +240,8 @@ class Blauwasser_OSM_Integration_Settings
 				),
 				array(
 					'id'          => 'default_lat',
-					'label'       => __('Default latitude', 'blauwasser-osm-integration'),
-					'description' => __('Default center latitude for maps (WGS84).', 'blauwasser-osm-integration'),
+					'label'       => __('Default latitude', 'blauwasser-map-plugin'),
+					'description' => __('Default center latitude for maps (WGS84).', 'blauwasser-map-plugin'),
 					'type'        => 'number',
 					'default'     => '54.5126',
 					'placeholder' => '54.5126',
@@ -251,8 +251,8 @@ class Blauwasser_OSM_Integration_Settings
 				),
 				array(
 					'id'          => 'default_lon',
-					'label'       => __('Default longitude', 'blauwasser-osm-integration'),
-					'description' => __('Default center longitude for maps (WGS84).', 'blauwasser-osm-integration'),
+					'label'       => __('Default longitude', 'blauwasser-map-plugin'),
+					'description' => __('Default center longitude for maps (WGS84).', 'blauwasser-map-plugin'),
 					'type'        => 'number',
 					'default'     => '13.6456',
 					'placeholder' => '13.6456',
@@ -263,7 +263,7 @@ class Blauwasser_OSM_Integration_Settings
 			)
 		);
 
-		$settings = apply_filters(Blauwasser_OSM_Integration::$token . '_settings_fields', $settings);
+		$settings = apply_filters(Blauwasser_map_plugin::$token . '_settings_fields', $settings);
 
 		return $settings;
 	}
@@ -296,7 +296,7 @@ class Blauwasser_OSM_Integration_Settings
 				}
 
 				// Add section to page.
-				add_settings_section($section, $data['title'], array($this, 'settings_section'), Blauwasser_OSM_Integration::$token . '_settings');
+				add_settings_section($section, $data['title'], array($this, 'settings_section'), Blauwasser_map_plugin::$token . '_settings');
 
 				foreach ($data['fields'] as $field) {
 
@@ -308,14 +308,14 @@ class Blauwasser_OSM_Integration_Settings
 
 					// Register field.
 					$option_name = $this->base . $field['id'];
-					register_setting(Blauwasser_OSM_Integration::$token . '_settings', $option_name, $validation);
+					register_setting(Blauwasser_map_plugin::$token . '_settings', $option_name, $validation);
 
 					// Add field to page.
 					add_settings_field(
 						$field['id'],
 						$field['label'],
 						array($this->parent->admin, 'display_field'),
-						Blauwasser_OSM_Integration::$token . '_settings',
+						Blauwasser_map_plugin::$token . '_settings',
 						$section,
 						array(
 							'field'  => $field,
@@ -352,8 +352,8 @@ class Blauwasser_OSM_Integration_Settings
 	{
 
 		// Build page HTML.
-		$html      = '<div class="wrap" id="' . Blauwasser_OSM_Integration::$token . '_settings">' . "\n";
-		$html .= '<h2>' . __('Plugin Settings', 'blauwasser-osm-integration') . '</h2>' . "\n";
+		$html      = '<div class="wrap" id="' . Blauwasser_map_plugin::$token . '_settings">' . "\n";
+		$html .= '<h2>' . __('Plugin Settings', 'blauwasser-map-plugin') . '</h2>' . "\n";
 
 		$tab = '';
 		//phpcs:disable
@@ -401,13 +401,13 @@ class Blauwasser_OSM_Integration_Settings
 
 		// Get settings fields.
 		ob_start();
-		settings_fields(Blauwasser_OSM_Integration::$token . '_settings');
-		do_settings_sections(Blauwasser_OSM_Integration::$token . '_settings');
+		settings_fields(Blauwasser_map_plugin::$token . '_settings');
+		do_settings_sections(Blauwasser_map_plugin::$token . '_settings');
 		$html .= ob_get_clean();
 
 		$html .= '<p class="submit">' . "\n";
 		$html .= '<input type="hidden" name="tab" value="' . esc_attr($tab) . '" />' . "\n";
-		$html .= '<input name="Submit" type="submit" class="button-primary" value="' . esc_attr(__('Save Settings', 'blauwasser-osm-integration')) . '" />' . "\n";
+		$html .= '<input name="Submit" type="submit" class="button-primary" value="' . esc_attr(__('Save Settings', 'blauwasser-map-plugin')) . '" />' . "\n";
 		$html .= '</p>' . "\n";
 		$html .= '</form>' . "\n";
 		$html .= '</div>' . "\n";
@@ -416,15 +416,15 @@ class Blauwasser_OSM_Integration_Settings
 	}
 
 	/**
-	 * Main Blauwasser_OSM_Integration_Settings Instance
+	 * Main Blauwasser_map_plugin_Settings Instance
 	 *
-	 * Ensures only one instance of Blauwasser_OSM_Integration_Settings is loaded or can be loaded.
+	 * Ensures only one instance of Blauwasser_map_plugin_Settings is loaded or can be loaded.
 	 *
 	 * @since 1.0.0
 	 * @static
-	 * @see Blauwasser_OSM_Integration()
+	 * @see Blauwasser_map_plugin()
 	 * @param object $parent Object instance.
-	 * @return object Blauwasser_OSM_Integration_Settings instance
+	 * @return object Blauwasser_map_plugin_Settings instance
 	 */
 	public static function instance($parent)
 	{
@@ -441,7 +441,7 @@ class Blauwasser_OSM_Integration_Settings
 	 */
 	public function __clone()
 	{
-		_doing_it_wrong(__FUNCTION__, esc_html(__('Cloning of Blauwasser_OSM_Integration_API is forbidden.')), esc_attr($this->parent->_version));
+		_doing_it_wrong(__FUNCTION__, esc_html(__('Cloning of Blauwasser_map_plugin_API is forbidden.')), esc_attr($this->parent->_version));
 	} // End __clone()
 
 	/**
@@ -451,7 +451,7 @@ class Blauwasser_OSM_Integration_Settings
 	 */
 	public function __wakeup()
 	{
-		_doing_it_wrong(__FUNCTION__, esc_html(__('Unserializing instances of Blauwasser_OSM_Integration_API is forbidden.')), esc_attr($this->parent->_version));
+		_doing_it_wrong(__FUNCTION__, esc_html(__('Unserializing instances of Blauwasser_map_plugin_API is forbidden.')), esc_attr($this->parent->_version));
 	} // End __wakeup()
 
 }

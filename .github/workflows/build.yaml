@@ -1,0 +1,43 @@
+name: Build
+
+# Disabled for new monorepo
+on:
+  push:
+    branches: [main]
+
+jobs:
+  release-please:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: google-github-actions/release-please-action@v3
+        id: release
+        with:
+          release-type: node
+          package-name: blauwasser-map-plugin
+          extra-files: blauwasser-map-plugin.php
+      - name: Checkout
+        uses: actions/checkout@v2
+        if: ${{ steps.release.outputs.release_created }}
+      - name: Use Node.js 16.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 16
+        if: ${{ steps.release.outputs.release_created }}
+      - name: Install modules
+        run: npm ci --no-scripts
+        env:
+          CYPRESS_INSTALL_BINARY: 0
+          DISABLE_OPENCOLLECTIVE: 1
+        if: ${{ steps.release.outputs.release_created }}
+      - name: Build for Production
+        run: npm run build
+        if: ${{ steps.release.outputs.release_created }}
+      - name: Upload binaries to release
+        uses: svenstaro/upload-release-action@v2
+        if: ${{ steps.release.outputs.release_created }}
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: blauwasser-map-plugin.zip
+          asset_name: blauwasser-map-plugin.zip
+          tag: ${{ steps.release.outputs.tag_name }}
+          overwrite: true

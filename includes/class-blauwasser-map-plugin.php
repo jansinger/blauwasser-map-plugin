@@ -13,11 +13,11 @@ if (!defined('ABSPATH')) {
 /**
  * Main plugin class.
  */
-class Blauwasser_OSM_Integration
+class Blauwasser_map_plugin
 {
 
 	/**
-	 * The single instance of Blauwasser_OSM_Integration.
+	 * The single instance of Blauwasser_map_plugin.
 	 *
 	 * @var     object
 	 * @access  private
@@ -26,9 +26,9 @@ class Blauwasser_OSM_Integration
 	private static $_instance = null; //phpcs:ignore
 
 	/**
-	 * Local instance of Blauwasser_OSM_Integration_Admin_API
+	 * Local instance of Blauwasser_map_plugin_Admin_API
 	 *
-	 * @var Blauwasser_OSM_Integration_Admin_API|null
+	 * @var Blauwasser_map_plugin_Admin_API|null
 	 */
 	public $admin = null;
 
@@ -92,7 +92,7 @@ class Blauwasser_OSM_Integration
 
 	public $defaultSettings;
 
-	public static $textdomain = 'blauwasser-osm-integration';
+	public static $textdomain = 'blauwasser-map-plugin';
 
 	/**
 	 * The token.
@@ -101,7 +101,7 @@ class Blauwasser_OSM_Integration
 	 * @access  public
 	 * @since   1.0.0
 	 */
-	public static $token = 'blauwasser_osm_integration';
+	public static $token = 'blauwasser_map_plugin';
 
 
 	/**
@@ -137,8 +137,8 @@ class Blauwasser_OSM_Integration
 
 		// Load API for generic admin functions.
 		if (is_admin()) {
-			$this->admin = new Blauwasser_OSM_Integration_Admin_API($this);
-			$this->wpBackery = new Blauwasser_OSM_Integration_WP_Backery($this);
+			$this->admin = new Blauwasser_map_plugin_Admin_API($this);
+			$this->wpBackery = new Blauwasser_map_plugin_WP_Backery($this);
 		}
 
 		// Handle localisation.
@@ -159,12 +159,12 @@ class Blauwasser_OSM_Integration
 
 	public function register_shortcodes()
 	{
-		return new Blauwasser_OSM_Integration_Shortcode($this, 'bw-map');
+		return new Blauwasser_map_plugin_Shortcode($this, 'bw-map');
 	}
 
 	public function register_rest_api()
 	{
-		return new Blauwasser_OSM_Integration_Rest_Api('geo');
+		return new Blauwasser_map_plugin_Rest_Api('geo');
 	}
 
 	/**
@@ -229,7 +229,7 @@ class Blauwasser_OSM_Integration
 
 	public function add_settings_script()
 	{
-		$bwOsmPlugin = array(
+		$bwMapPlugin = array(
 			'settings' => array(
 				'key' => get_option('bw_osm_maptiler_key', '_invalid_key_'),
 				'map' => get_option('bw_osm_maptiler_style', 'streets'),
@@ -240,24 +240,24 @@ class Blauwasser_OSM_Integration
 				'zoom' => $this->defaultSettings['zoom'],
 			),
 			'lang' => array(
-				'noNewPosition' => __("Now new coordinates set, nothing to save.", Blauwasser_OSM_Integration::$textdomain),
-				'changePosition' => __("New coordinates set, please do not forget to save!", Blauwasser_OSM_Integration::$textdomain),
-				'positionSaved' => __("New position saved successfully", Blauwasser_OSM_Integration::$textdomain),
-				'positionDeleted' => __("Position deleted successfully", Blauwasser_OSM_Integration::$textdomain),
-				'saveError' => __('Error saving new position:', Blauwasser_OSM_Integration::$textdomain),
-				'deleteError' => __('Error deleting position:', Blauwasser_OSM_Integration::$textdomain),
-				'geotag' => __('Geotag (lat/lon):', Blauwasser_OSM_Integration::$textdomain),
-				'currentZoom' => __('Current zoom:', Blauwasser_OSM_Integration::$textdomain),
-				'shortcodeHint' => __('To show a map with a marker at the geotag position in the center copy the shown shortcode into the textblock.', Blauwasser_OSM_Integration::$textdomain),
-				'save' => __('Save', Blauwasser_OSM_Integration::$textdomain),
-				'resetGeotag' => __('Reset geotag position', Blauwasser_OSM_Integration::$textdomain),
-				'deleteGeotag' => __('Delete geotag from post', Blauwasser_OSM_Integration::$textdomain),
-				'center' => __('Center', Blauwasser_OSM_Integration::$textdomain),
-				'zoom' => __('Zoom', Blauwasser_OSM_Integration::$textdomain),
+				'noNewPosition' => __("Now new coordinates set, nothing to save.", Blauwasser_map_plugin::$textdomain),
+				'changePosition' => __("New coordinates set, please do not forget to save!", Blauwasser_map_plugin::$textdomain),
+				'positionSaved' => __("New position saved successfully", Blauwasser_map_plugin::$textdomain),
+				'positionDeleted' => __("Position deleted successfully", Blauwasser_map_plugin::$textdomain),
+				'saveError' => __('Error saving new position:', Blauwasser_map_plugin::$textdomain),
+				'deleteError' => __('Error deleting position:', Blauwasser_map_plugin::$textdomain),
+				'geotag' => __('Geotag (lat/lon):', Blauwasser_map_plugin::$textdomain),
+				'currentZoom' => __('Current zoom:', Blauwasser_map_plugin::$textdomain),
+				'shortcodeHint' => __('To show a map with a marker at the geotag position in the center copy the shown shortcode into the textblock.', Blauwasser_map_plugin::$textdomain),
+				'save' => __('Save', Blauwasser_map_plugin::$textdomain),
+				'resetGeotag' => __('Reset geotag position', Blauwasser_map_plugin::$textdomain),
+				'deleteGeotag' => __('Delete geotag from post', Blauwasser_map_plugin::$textdomain),
+				'center' => __('Center', Blauwasser_map_plugin::$textdomain),
+				'zoom' => __('Zoom', Blauwasser_map_plugin::$textdomain),
 			),
 			'data' => array(),
 		);
-		$script = 'const bwOsmPlugin=' . json_encode($bwOsmPlugin) . ';';
+		$script = 'const bwMapPlugin=' . json_encode($bwMapPlugin) . ';';
 
 		wp_register_script(self::$token . '-settings', false, array(), false, true);
 		wp_add_inline_script(self::$token . '-settings', $script, 'before');
@@ -302,15 +302,15 @@ class Blauwasser_OSM_Integration
 	} // End load_plugin_textdomain ()
 
 	/**
-	 * Main Blauwasser_OSM_Integration Instance
+	 * Main Blauwasser_map_plugin Instance
 	 *
-	 * Ensures only one instance of Blauwasser_OSM_Integration is loaded or can be loaded.
+	 * Ensures only one instance of Blauwasser_map_plugin is loaded or can be loaded.
 	 *
 	 * @param string $file File instance.
 	 * @param string $version Version parameter.
 	 *
-	 * @return Object Blauwasser_OSM_Integration instance
-	 * @see Blauwasser_OSM_Integration()
+	 * @return Object Blauwasser_map_plugin instance
+	 * @see Blauwasser_map_plugin()
 	 * @since 1.0.0
 	 * @static
 	 */
@@ -330,7 +330,7 @@ class Blauwasser_OSM_Integration
 	 */
 	public function __clone()
 	{
-		_doing_it_wrong(__FUNCTION__, esc_html(__('Cloning of Blauwasser_OSM_Integration is forbidden')), esc_attr($this->_version));
+		_doing_it_wrong(__FUNCTION__, esc_html(__('Cloning of Blauwasser_map_plugin is forbidden')), esc_attr($this->_version));
 	} // End __clone ()
 
 	/**
@@ -340,7 +340,7 @@ class Blauwasser_OSM_Integration
 	 */
 	public function __wakeup()
 	{
-		_doing_it_wrong(__FUNCTION__, esc_html(__('Unserializing instances of Blauwasser_OSM_Integration is forbidden')), esc_attr($this->_version));
+		_doing_it_wrong(__FUNCTION__, esc_html(__('Unserializing instances of Blauwasser_map_plugin is forbidden')), esc_attr($this->_version));
 	} // End __wakeup ()
 
 	/**

@@ -16,7 +16,7 @@ const addTooltipOverlay = (element: HTMLElement, map: Map) => {
 };
 
 document.addEventListener("DOMContentLoaded", function () {
-  const { settings, data } = bwOsmPlugin;
+  const { settings, data } = bwMapPlugin;
   for (const entry of data) {
     const mapElement = document.getElementById(entry.elementId);
     entry.style = defaultMarkerStyle(settings.assetsUrl);

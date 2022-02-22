@@ -13,7 +13,7 @@ if (!defined('ABSPATH')) {
 /**
  * Admin API class.
  */
-class Blauwasser_OSM_Integration_WP_Backery
+class Blauwasser_map_plugin_WP_Backery
 {
 
 	/**
@@ -56,7 +56,7 @@ class Blauwasser_OSM_Integration_WP_Backery
 		list($lon, $lat) = $this->parent->defaultSettings['center'];
 
 		vc_map(array(
-			"name" => __("Blauwasser Map", Blauwasser_OSM_Integration::$textdomain),
+			"name" => __("Blauwasser Map", Blauwasser_map_plugin::$textdomain),
 			"base" => "bw-map",
 			"class" => "bw-map-settings",
 			"category" => __('Content'),
@@ -67,23 +67,23 @@ class Blauwasser_OSM_Integration_WP_Backery
 					"type" => "hidden",
 					"holder" => "span",
 					"edit_field_class" => "bw-map-zoom col-md-4",
-					"heading" => __("Zoom", Blauwasser_OSM_Integration::$textdomain),
+					"heading" => __("Zoom", Blauwasser_map_plugin::$textdomain),
 					"param_name" => "zoom",
 					"value" => $this->parent->defaultSettings['zoom'],
-					"description" => __("Map zoom level.", Blauwasser_OSM_Integration::$textdomain)
+					"description" => __("Map zoom level.", Blauwasser_map_plugin::$textdomain)
 				),
 				array(
 					"type" => "hidden",
 					"holder" => "span",
 					"edit_field_class" => "bw-map-center",
-					"heading" => __("Center", Blauwasser_OSM_Integration::$textdomain),
+					"heading" => __("Center", Blauwasser_map_plugin::$textdomain),
 					"param_name" => "center",
 					"value" => "{$lat}, {$lon}",
-					"description" => __("Coordinates of the map center.", Blauwasser_OSM_Integration::$textdomain)
+					"description" => __("Coordinates of the map center.", Blauwasser_map_plugin::$textdomain)
 				),
 				array(
 					'type' => 'autocomplete',
-					'heading' => esc_html__('Filter posts', Blauwasser_OSM_Integration::$textdomain),
+					'heading' => esc_html__('Filter posts', Blauwasser_map_plugin::$textdomain),
 					'param_name' => 'taxonomies',
 					"edit_field_class" => "bw-map-taxonomies",
 					'settings' => array(
@@ -101,16 +101,16 @@ class Blauwasser_OSM_Integration_WP_Backery
 						// auto focus input, default true
 					),
 					'param_holder_class' => 'vc_not-for-custom',
-					'description' => esc_html__('Enter categories, tags or custom taxonomies.', Blauwasser_OSM_Integration::$textdomain),
+					'description' => esc_html__('Enter categories, tags or custom taxonomies.', Blauwasser_map_plugin::$textdomain),
 				),
 				array(
 					"type" => "bw-map-preview",
 					"holder" => "div",
 					"class" => "",
-					"heading" => __("Map preview", Blauwasser_OSM_Integration::$textdomain),
+					"heading" => __("Map preview", Blauwasser_map_plugin::$textdomain),
 					"param_name" => "map",
 					"value" => "",
-					"description" => __("Map preview. Adjust size and zoom and save.", Blauwasser_OSM_Integration::$textdomain),
+					"description" => __("Map preview. Adjust size and zoom and save.", Blauwasser_map_plugin::$textdomain),
 				),
 			)
 		));

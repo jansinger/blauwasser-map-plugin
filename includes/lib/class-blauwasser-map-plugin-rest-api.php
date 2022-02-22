@@ -13,7 +13,7 @@ if (!defined('ABSPATH')) {
 /**
  * Post type declaration class.
  */
-class Blauwasser_OSM_Integration_Rest_Api
+class Blauwasser_map_plugin_Rest_Api
 {
 
 	public static $rest_base = 'blauwasser-map/v1';
@@ -153,21 +153,21 @@ class Blauwasser_OSM_Integration_Rest_Api
 
 		// Here we add our PHP representation of JSON Schema.
 		$args['categories'] = array(
-			'description'       => esc_html__('Categories to search for.', Blauwasser_OSM_Integration::$textdomain),
+			'description'       => esc_html__('Categories to search for.', Blauwasser_map_plugin::$textdomain),
 			'type'              => 'string',
 			'validate_callback' => array($this, 'prefix_validate_categories'),
 			'sanitize_callback' => array($this, 'prefix_sanitize_categories'),
 			'required'          => false,
 		);
 		$args['tags'] = array(
-			'description'       => esc_html__('Tags to search for.', Blauwasser_OSM_Integration::$textdomain),
+			'description'       => esc_html__('Tags to search for.', Blauwasser_map_plugin::$textdomain),
 			'type'              => 'string',
 			'validate_callback' => array($this, 'prefix_validate_categories'),
 			'sanitize_callback' => array($this, 'prefix_sanitize_categories'),
 			'required'          => false,
 		);
 		$args['taxonomies'] = array(
-			'description'       => esc_html__('Taxonomies to search for.', Blauwasser_OSM_Integration::$textdomain),
+			'description'       => esc_html__('Taxonomies to search for.', Blauwasser_map_plugin::$textdomain),
 			'type'              => 'string',
 			'validate_callback' => array($this, 'prefix_validate_categories'),
 			'sanitize_callback' => array($this, 'prefix_sanitize_categories'),
@@ -193,12 +193,12 @@ class Blauwasser_OSM_Integration_Rest_Api
 			$argument = $attributes['args'][$param];
 			// Check to make sure our argument is a string.
 			if ('string' === $argument['type'] && !is_string($value)) {
-				return new WP_Error('rest_invalid_param', sprintf(esc_html__('%1$s is not of type %2$s', Blauwasser_OSM_Integration::$textdomain), $param, 'string'), array('status' => 400));
+				return new WP_Error('rest_invalid_param', sprintf(esc_html__('%1$s is not of type %2$s', Blauwasser_map_plugin::$textdomain), $param, 'string'), array('status' => 400));
 			}
 		} else {
 			// This code won't execute because we have specified this argument as required.
 			// If we reused this validation callback and did not have required args then this would fire.
-			return new WP_Error('rest_invalid_param', sprintf(esc_html__('%s was not registered as a request argument.', Blauwasser_OSM_Integration::$textdomain), $param), array('status' => 400));
+			return new WP_Error('rest_invalid_param', sprintf(esc_html__('%s was not registered as a request argument.', Blauwasser_map_plugin::$textdomain), $param), array('status' => 400));
 		}
 
 		// If we got this far then the data is valid.
@@ -226,10 +226,10 @@ class Blauwasser_OSM_Integration_Rest_Api
 		} else {
 			// This code won't execute because we have specified this argument as required.
 			// If we reused this validation callback and did not have required args then this would fire.
-			return new WP_Error('rest_invalid_param', sprintf(esc_html__('%s was not registered as a request argument.', Blauwasser_OSM_Integration::$textdomain), $param), array('status' => 400));
+			return new WP_Error('rest_invalid_param', sprintf(esc_html__('%s was not registered as a request argument.', Blauwasser_map_plugin::$textdomain), $param), array('status' => 400));
 		}
 
 		// If we got this far then something went wrong don't use user input.
-		return new WP_Error('rest_api_sad', esc_html__('Something went terribly wrong.', Blauwasser_OSM_Integration::$textdomain), array('status' => 500));
+		return new WP_Error('rest_api_sad', esc_html__('Something went terribly wrong.', Blauwasser_map_plugin::$textdomain), array('status' => 500));
 	}
 }
