@@ -1,7 +1,0 @@
-{
-  "ol/src/admin.ts": {
-    "file": "bw-osm.admin.umd.js",
-    "src": "ol/src/admin.ts",
-    "isEntry": true
-  }
-}
