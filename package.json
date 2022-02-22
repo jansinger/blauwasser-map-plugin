@@ -1,6 +1,6 @@
 {
   "name": "blauwasser-osm-integration",
-  "version": "0.3.6",
+  "version": "0.3.7",
   "scripts": {
     "start": "vite",
     "start:admin": "vite -c vite.config.admin.js",
