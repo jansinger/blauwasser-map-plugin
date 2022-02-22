@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.0.1](https://github.com/jansinger/blauwasser-map-plugin/compare/v1.0.0...v1.0.1) (2022-02-22)
+
+
+### Bug Fixes
+
+* remove npm patch from build ([ead97a5](https://github.com/jansinger/blauwasser-map-plugin/commit/ead97a59c95862b609cd4afcb768f46ead6fa47a))
+
 ## 1.0.0 (2022-02-22)
 
 
