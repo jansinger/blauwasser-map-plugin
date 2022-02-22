@@ -61,19 +61,6 @@
         if (key === input.keyCode) {
           if (currentTag) input.preventDefault();
 
-          /* switch (input.keyCode) {
-                    case 9:
-                        // TAB add first element on the autoComplete list
-                        if (autoComplete && document.getElementById(matchsID)) {                        
-                            addTag(document.getElementById(matchsID).querySelectorAll("li")[0].textContent);
-                        } else {
-                            addTag(currentTag);
-                        }                    
-                        break;
-                    default:
-                        addTag(currentTag);
-                        break;
-                    } */
           if (autoComplete && document.getElementById(matchsID)) {
             addTag(
               document.getElementById(matchsID).querySelectorAll("li")[0]
@@ -195,7 +182,7 @@
     const tags = splitTags(data).map((tag) => addTag(tag));
   }
 
-  function onBlur(tag) {
+  function onBlur(event, tag) {
     if (!document.getElementById(matchsID) && allowBlur) {
       event.preventDefault();
       addTag(tag);
@@ -249,7 +236,7 @@
     ) {
       if (!autoCompleteKey) {
         return console.error(
-          "'autoCompleteValue' is necessary if 'autoComplete' result is an array of objects"
+          "'autoCompleteKey' is necessary if 'autoComplete' result is an array of objects"
         );
       }
 
@@ -288,6 +275,7 @@
   }
 
   function navigateAutoComplete(
+    event,
     autoCompleteIndex,
     autoCompleteLength,
     autoCompleteElement
@@ -335,7 +323,7 @@
   }
 
   function uniqueID() {
-    return "sti_" + Math.random().toString(36).substr(2, 9);
+    return "sti_" + Math.random().toString(36).substring(2, 9);
   }
 </script>
 
@@ -370,7 +358,7 @@
     on:keyup={getMatchElements}
     on:paste={onPaste}
     on:drop={onDrop}
-    on:blur={() => onBlur(tag)}
+    on:blur={(event) => onBlur(event, tag)}
     class="svelte-tags-input"
     {placeholder}
     disabled={disable}
@@ -383,8 +371,13 @@
       {#each arrelementsmatch as element, index}
         <li
           tabindex="-1"
-          on:keydown={() =>
-            navigateAutoComplete(index, arrelementsmatch.length, element.label)}
+          on:keydown={(event) =>
+            navigateAutoComplete(
+              event,
+              index,
+              arrelementsmatch.length,
+              element.label
+            )}
           on:click={() => addTag(element.label)}
         >
           {@html element.search}
