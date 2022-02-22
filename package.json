@@ -3,11 +3,9 @@
   "version": "0.3.7",
   "scripts": {
     "start": "vite",
-    "start:admin": "vite -c vite.config.admin.js",
     "build": "run-s build:*",
     "build:ol-main": "vite build -c vite.config.main.js",
     "build:ol-admin": "vite build -c vite.config.admin.js",
-    "build:patch": "npm version patch",
     "build:zip": "node --experimental-json-modules package.mjs"
   },
   "devDependencies": {

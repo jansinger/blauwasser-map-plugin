@@ -204,7 +204,7 @@ class Blauwasser_map_plugin
 			wp_register_script(self::$token . '-map', $map_script, array(self::$token . '-map-client'), null, true);
 		} else {
 			// Production mode
-			$map_script = esc_url($this->osm_assets_url) .  'bw-osm.umd.js';
+			$map_script = esc_url($this->osm_assets_url) .  'bw-map.umd.js';
 			wp_register_script(self::$token . '-map', $map_script, array(), $this->_version, true);
 		}
 		$this->add_settings_script();
@@ -221,7 +221,7 @@ class Blauwasser_map_plugin
 			wp_register_script(self::$token . '-map-admin', $map_script, array(self::$token . '-map-client'), null, true);
 		} else {
 			// Production mode
-			$map_script = esc_url($this->osm_assets_url) .  'bw-osm.admin.umd.js';
+			$map_script = esc_url($this->osm_assets_url) .  'bw-map.admin.umd.js';
 			wp_register_script(self::$token . '-map-admin', $map_script, array(), $this->_version, true);
 		}
 		$this->add_settings_script();
