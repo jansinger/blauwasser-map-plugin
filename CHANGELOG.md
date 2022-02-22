@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.0.2](https://github.com/jansinger/blauwasser-map-plugin/compare/v1.0.1...v1.0.2) (2022-02-22)
+
+
+### Bug Fixes
+
+* do not use global event object ([a9786e8](https://github.com/jansinger/blauwasser-map-plugin/commit/a9786e86aa3d729bb2c922ba4850f979414e5a5e))
+
 ### [1.0.1](https://github.com/jansinger/blauwasser-map-plugin/compare/v1.0.0...v1.0.1) (2022-02-22)
 
 
