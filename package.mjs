@@ -1,10 +1,9 @@
-import { createWriteStream, readFileSync, writeFileSync } from "fs";
+import { createWriteStream } from "fs";
 import archiver from "archiver";
-import pkg from "./package.json";
 
-const pluginName = "blauwasser-osm-integration";
+const pluginName = "blauwasser-map-plugin";
 const directories = ["assets", "includes", "lang"];
-const files = ["index.php", "version.php", "LICENSE"];
+const files = ["index.php", "blauwasser-map-plugin.php", "LICENSE"];
 
 const output = createWriteStream(`${pluginName}.zip`);
 const archive = archiver("zip");
@@ -26,17 +25,8 @@ for (let dir of directories) {
   archive.directory(`${dir}/`, `${pluginName}/${dir}`);
 }
 
-writeFileSync(
-  "version.php",
-  `<?php\ndefine('BLAUWASSER_OSM_INTEGRATION_VERSION', '${pkg.version}');`
-);
-
 for (let file of files) {
   archive.file(`${file}`, { name: `${pluginName}/${file}` });
 }
-
-const content = readFileSync(`${pluginName}.php`, "utf8");
-const data = content.replace("___VERSION___", pkg.version);
-archive.append(data, { name: `${pluginName}/${pluginName}.php` });
 
 archive.finalize();
