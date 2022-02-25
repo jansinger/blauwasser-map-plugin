@@ -1,4 +1,4 @@
-import TileLayer from "ol/layer/Tile";
+import TileLayer from "ol/layer/WebGLTile";
 import TileJSON from "ol/source/TileJSON";
 
 const attributions =

@@ -1,5 +1,5 @@
 import XYZ from "ol/source/XYZ";
-import TileLayer from "ol/layer/Tile";
+import TileLayer from "ol/layer/WebGLTile";
 
 export const seamap = () =>
   new TileLayer({
