@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/jansinger/blauwasser-map-plugin/compare/v1.0.2...v1.1.0) (2022-02-25)
+
+
+### Features
+
+* use webgl tiles ([b98e902](https://github.com/jansinger/blauwasser-map-plugin/commit/b98e902176d13b8d812b83c14c575e2f0e48422d))
+
 ### [1.0.2](https://github.com/jansinger/blauwasser-map-plugin/compare/v1.0.1...v1.0.2) (2022-02-22)
 
 
