@@ -1,5 +1,13 @@
 # Changelog
 
+### [1.2.1](https://github.com/jansinger/blauwasser-map-plugin/compare/v1.2.0...v1.2.1) (2022-02-28)
+
+
+### Bug Fixes
+
+* maximum prefix length ([c92736c](https://github.com/jansinger/blauwasser-map-plugin/commit/c92736c69f8682f5d8c138cb9acf8a72f95973a9))
+* trigger release please with dependabot ([6c07d60](https://github.com/jansinger/blauwasser-map-plugin/commit/6c07d60b524ddc4f864d0a72c501f05359385378))
+
 ## [1.2.0](https://github.com/jansinger/blauwasser-map-plugin/compare/v1.1.0...v1.2.0) (2022-02-28)
 
 
