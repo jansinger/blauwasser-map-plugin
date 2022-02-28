@@ -4,17 +4,19 @@ import GeoJSON from "ol/format/GeoJSON";
 import { Cluster } from "ol/source";
 import { Circle as CircleStyle, Fill, Stroke, Style, Text } from "ol/style";
 
+const clusterImage = new CircleStyle({
+  radius: 15,
+  stroke: new Stroke({
+    color: "#fff",
+  }),
+  fill: new Fill({
+    color: "#003363",
+  }),
+});
+
 const clusterStyle = (size: number) =>
   new Style({
-    image: new CircleStyle({
-      radius: 15,
-      stroke: new Stroke({
-        color: "#fff",
-      }),
-      fill: new Fill({
-        color: "#003363",
-      }),
-    }),
+    image: clusterImage,
     text: new Text({
       text: size.toString(),
       fill: new Fill({
@@ -31,7 +33,7 @@ const source = (src: string) =>
 
 export const clusterSource = (src: string) =>
   new Cluster({
-    distance: 40,
+    distance: 50,
     minDistance: 20,
     source: source(src),
   });

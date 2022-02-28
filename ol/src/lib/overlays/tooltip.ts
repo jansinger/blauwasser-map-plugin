@@ -12,13 +12,7 @@ const getFeatureAtEventPixel = (event: MapBrowserEvent<UIEvent>, map: Map) => {
     return candidate.get("type") === "FeatureLayer";
   };
   const pixel = map.getEventPixel(event.originalEvent);
-  return map.forEachFeatureAtPixel(
-    pixel,
-    function (feature) {
-      return feature;
-    },
-    { layerFilter }
-  );
+  return map.getFeaturesAtPixel(pixel, { layerFilter })[0];
 };
 
 export const createTooltipOverlay = (
