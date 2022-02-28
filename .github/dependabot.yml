@@ -6,4 +6,4 @@ updates:
     schedule:
       interval: "daily"
     commit-message:
-      prefix: "fix(dependabot):"
+      prefix: "fix(deps):"
