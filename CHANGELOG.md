@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/jansinger/blauwasser-map-plugin/compare/v1.1.0...v1.2.0) (2022-02-28)
+
+
+### Features
+
+* use getFeaturesAtPixel ([ac301f2](https://github.com/jansinger/blauwasser-map-plugin/commit/ac301f26967f10ae2d1652240251809ddcdbd16c))
+
 ## [1.1.0](https://github.com/jansinger/blauwasser-map-plugin/compare/v1.0.2...v1.1.0) (2022-02-25)
 
 
