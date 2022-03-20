@@ -1,5 +1,36 @@
 # Changelog
 
+### [1.2.4](https://github.com/jansinger/blauwasser-map-plugin/compare/v1.2.3...v1.2.4) (2022-03-20)
+
+
+### Bug Fixes
+
+* **deps:** bump @sveltejs/vite-plugin-svelte ([80c5986](https://github.com/jansinger/blauwasser-map-plugin/commit/80c5986c37987102652a613f0296a9003a4174e3))
+* **deps:** bump svelte-check from 2.4.5 to 2.4.6 ([c944716](https://github.com/jansinger/blauwasser-map-plugin/commit/c94471691d6e81caa9bfe29de4dacd0f2d406334))
+
+### [1.2.3](https://github.com/jansinger/blauwasser-map-plugin/compare/v1.2.2...v1.2.3) (2022-03-02)
+
+
+### Bug Fixes
+
+* **deps:** bump @sveltejs/vite-plugin-svelte ([b121251](https://github.com/jansinger/blauwasser-map-plugin/commit/b1212513c14c00a46b001d6a87cfc3b139ccff72))
+* **deps:** bump vite from 2.8.5 to 2.8.6 ([efe8e74](https://github.com/jansinger/blauwasser-map-plugin/commit/efe8e740784aa577ad557899dd5f57a0937081fc))
+
+### [1.2.2](https://github.com/jansinger/blauwasser-map-plugin/compare/v1.2.1...v1.2.2) (2022-03-01)
+
+
+### Bug Fixes
+
+* **deps:** bump typescript from 4.5.5 to 4.6.2 ([d866351](https://github.com/jansinger/blauwasser-map-plugin/commit/d866351cb8e5b3a2e5d11ba9136b24d02b7be5e9))
+
+### [1.2.1](https://github.com/jansinger/blauwasser-map-plugin/compare/v1.2.0...v1.2.1) (2022-02-28)
+
+
+### Bug Fixes
+
+* maximum prefix length ([c92736c](https://github.com/jansinger/blauwasser-map-plugin/commit/c92736c69f8682f5d8c138cb9acf8a72f95973a9))
+* trigger release please with dependabot ([6c07d60](https://github.com/jansinger/blauwasser-map-plugin/commit/6c07d60b524ddc4f864d0a72c501f05359385378))
+
 ## [1.2.0](https://github.com/jansinger/blauwasser-map-plugin/compare/v1.1.0...v1.2.0) (2022-02-28)
 
 

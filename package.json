@@ -1,6 +1,6 @@
 {
   "name": "blauwasser-map-plugin",
-  "version": "1.2.0",
+  "version": "1.2.4",
   "scripts": {
     "start": "vite",
     "build": "run-s build:*",
@@ -9,14 +9,14 @@
     "build:zip": "node --experimental-json-modules package.mjs"
   },
   "devDependencies": {
-    "@sveltejs/vite-plugin-svelte": "^1.0.0-next.38",
+    "@sveltejs/vite-plugin-svelte": "^1.0.0-next.40",
     "archiver": "^5.3.0",
     "npm-run-all": "^4.1.5",
     "svelte": "^3.46.4",
-    "svelte-check": "^2.4.5",
+    "svelte-check": "^2.4.6",
     "svelte-preprocess": "^4.10.4",
-    "typescript": "^4.5.5",
-    "vite": "^2.8.5"
+    "typescript": "^4.6.2",
+    "vite": "^2.8.6"
   },
   "dependencies": {
     "ol": "latest"
