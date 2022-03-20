@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.2.5](https://github.com/jansinger/blauwasser-map-plugin/compare/v1.2.4...v1.2.5) (2022-03-20)
+
+
+### Bug Fixes
+
+* Safari issues with WebGL ([a38645f](https://github.com/jansinger/blauwasser-map-plugin/commit/a38645f36473ccdaa40359ff90e95ef95877dd35))
+
 ### [1.2.4](https://github.com/jansinger/blauwasser-map-plugin/compare/v1.2.3...v1.2.4) (2022-03-20)
 
 
