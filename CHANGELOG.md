@@ -1,5 +1,13 @@
 # Changelog
 
+### [1.2.6](https://github.com/jansinger/blauwasser-map-plugin/compare/v1.2.5...v1.2.6) (2022-03-28)
+
+
+### Bug Fixes
+
+* **deps:** bump ol from 6.13.0 to 6.14.1 ([5e42091](https://github.com/jansinger/blauwasser-map-plugin/commit/5e4209146387fddfec24f5793eb5641c11104a92))
+* **deps:** bump typescript from 4.6.2 to 4.6.3 ([047eaf4](https://github.com/jansinger/blauwasser-map-plugin/commit/047eaf4ea15a0fb82773623d9e7e0eb4c52864d9))
+
 ### [1.2.5](https://github.com/jansinger/blauwasser-map-plugin/compare/v1.2.4...v1.2.5) (2022-03-20)
 
 

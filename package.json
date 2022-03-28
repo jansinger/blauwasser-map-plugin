@@ -1,6 +1,6 @@
 {
   "name": "blauwasser-map-plugin",
-  "version": "1.2.5",
+  "version": "1.2.6",
   "scripts": {
     "start": "vite",
     "build": "run-s build:*",
