@@ -9,6 +9,19 @@
 * **deps:** bump svelte from 3.46.4 to 3.46.5 ([c156cf6](https://github.com/jansinger/blauwasser-map-plugin/commit/c156cf67b76fed95bf9e9001ff1a68f4b3887e53))
 * **deps:** bump svelte from 3.46.5 to 3.46.6 ([dc18bca](https://github.com/jansinger/blauwasser-map-plugin/commit/dc18bca0fd44a5bdd5274e19f4af0dbff8555b14))
 * **deps:** bump svelte-check from 2.4.6 to 2.5.0 ([ed33d76](https://github.com/jansinger/blauwasser-map-plugin/commit/ed33d76ea9f68227a376d2e333cfaa63634a37fc))
+* **deps:** bump svelte-preprocess from 4.10.4 to 4.10.5 ([a7311e4](https://github.com/jansinger/blauwasser-map-plugin/commit/a7311e43ab883f610e3173edff58b7b8078ac50e))
+* **deps:** bump vite from 2.8.6 to 2.9.0 ([10fdf0a](https://github.com/jansinger/blauwasser-map-plugin/commit/10fdf0a3aeda434eaa03a4571fa4e0cffaac64f5))
+* **deps:** bump vite from 2.9.0 to 2.9.1 ([97d7cb7](https://github.com/jansinger/blauwasser-map-plugin/commit/97d7cb776841c96207026317777415226b961f66))
+
+### [1.2.7](https://github.com/jansinger/blauwasser-map-plugin/compare/v1.2.6...v1.2.7) (2022-04-09)
+
+
+### Bug Fixes
+
+* **deps:** bump @sveltejs/vite-plugin-svelte ([1f3e66e](https://github.com/jansinger/blauwasser-map-plugin/commit/1f3e66e02acf3cab22286d3e00f37f71637a0b0c))
+* **deps:** bump svelte from 3.46.4 to 3.46.5 ([c156cf6](https://github.com/jansinger/blauwasser-map-plugin/commit/c156cf67b76fed95bf9e9001ff1a68f4b3887e53))
+* **deps:** bump svelte from 3.46.5 to 3.46.6 ([dc18bca](https://github.com/jansinger/blauwasser-map-plugin/commit/dc18bca0fd44a5bdd5274e19f4af0dbff8555b14))
+* **deps:** bump svelte-check from 2.4.6 to 2.5.0 ([ed33d76](https://github.com/jansinger/blauwasser-map-plugin/commit/ed33d76ea9f68227a376d2e333cfaa63634a37fc))
 * **deps:** bump vite from 2.8.6 to 2.9.0 ([10fdf0a](https://github.com/jansinger/blauwasser-map-plugin/commit/10fdf0a3aeda434eaa03a4571fa4e0cffaac64f5))
 * **deps:** bump vite from 2.9.0 to 2.9.1 ([97d7cb7](https://github.com/jansinger/blauwasser-map-plugin/commit/97d7cb776841c96207026317777415226b961f66))
 
