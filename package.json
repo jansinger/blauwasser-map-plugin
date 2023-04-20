@@ -9,14 +9,14 @@
     "build:zip": "node --experimental-json-modules package.mjs"
   },
   "devDependencies": {
-    "@sveltejs/vite-plugin-svelte": "^1.0.0-next.49",
+    "@sveltejs/vite-plugin-svelte": "^1.4.0",
     "archiver": "^5.3.1",
     "npm-run-all": "^4.1.5",
     "svelte": "^3.58.0",
-    "svelte-check": "^3.0.4",
-    "svelte-preprocess": "^4.10.7",
-    "typescript": "^4.9.5",
-    "vite": "^2.9.14"
+    "svelte-check": "^3.2.0",
+    "svelte-preprocess": "^5.0.3",
+    "typescript": "^5.0.4",
+    "vite": "^3.2.6"
   },
   "dependencies": {
     "ol": "latest"
