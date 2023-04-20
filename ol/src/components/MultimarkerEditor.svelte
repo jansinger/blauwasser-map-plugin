@@ -1,11 +1,11 @@
-<script type="ts" context="module">
+<script lang="ts" context="module">
   import { settings } from "$lib/settings";
 
   const categoriesUrl = `${settings.restBase}wp/v2/categories?_fields=name`;
   const tagsUrl = `${settings.restBase}wp/v2/tags?_fields=name`;
 </script>
 
-<script type="ts">
+<script lang="ts">
   import EditorMap from "./EditorMap.svelte";
   import ShortcodeMulti from "./ShortcodeMulti.svelte";
   import Tags from "./Tags.svelte";

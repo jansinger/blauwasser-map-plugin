@@ -1,4 +1,4 @@
-<script type="ts">
+<script lang="ts">
   import { fly } from "svelte/transition";
   import MapComponent from "./GeotagMap.svelte";
   import ShortCodeSimple from "./ShortcodeSimple.svelte";

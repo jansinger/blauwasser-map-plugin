@@ -1,4 +1,4 @@
-<script type="ts">
+<script lang="ts">
   import { baseMap } from "$lib/baseMap";
   import { lang, settings } from "$lib/settings";
   import { fromLonLat, toLonLat } from "ol/proj";

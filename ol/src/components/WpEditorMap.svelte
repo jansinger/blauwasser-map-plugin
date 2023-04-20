@@ -1,4 +1,4 @@
-<script type="ts">
+<script lang="ts">
   import { settings } from "$lib/settings";
   import { onMount } from "svelte";
   import EditorMap from "./EditorMap.svelte";

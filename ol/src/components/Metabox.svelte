@@ -1,4 +1,4 @@
-<script type="ts">
+<script lang="ts">
   import GeotagEditor from "./GeotagEditor.svelte";
   import { fade } from "svelte/transition";
   import MultimarkerEditor from "./MultimarkerEditor.svelte";
