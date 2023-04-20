@@ -1,5 +1,23 @@
 # Changelog
 
+## [1.3.0](https://github.com/jansinger/blauwasser-map-plugin/compare/v1.2.9...v1.3.0) (2023-04-20)
+
+
+### Features
+
+* Upgrade Components ([6898418](https://github.com/jansinger/blauwasser-map-plugin/commit/6898418ec102733f4f608d75449f0803fbe2f3b0))
+
+
+### Bug Fixes
+
+* **deps:** bump ol from 6.14.1 to 7.3.0 ([9957663](https://github.com/jansinger/blauwasser-map-plugin/commit/99576639d9d2e47c2d43abee00c86fb055a9ec38))
+* **deps:** bump svelte from 3.55.1 to 3.58.0 ([97ce145](https://github.com/jansinger/blauwasser-map-plugin/commit/97ce145057cb35402a7915169a4a07e4b5774840))
+* **deps:** bump svelte-check from 2.8.0 to 3.0.4 ([1064257](https://github.com/jansinger/blauwasser-map-plugin/commit/106425747c67d65b613c2f807ee0d28ffe297b14))
+* **deps:** bump typescript from 4.7.4 to 4.9.5 ([ccebad7](https://github.com/jansinger/blauwasser-map-plugin/commit/ccebad735c07f4213082cb7144e2642c5ce06dbd))
+* package.lock ([4ed0ed7](https://github.com/jansinger/blauwasser-map-plugin/commit/4ed0ed7cac48542362574f4b04cf93bc73a68b82))
+* upgrade versions ([72f4e6d](https://github.com/jansinger/blauwasser-map-plugin/commit/72f4e6d0bdc9050e771d31018bb152727d752183))
+* workflow permissions ([10a394d](https://github.com/jansinger/blauwasser-map-plugin/commit/10a394dbf0022caaf9e77655109bfc6c4b9e9e6f))
+
 ## [1.2.9](https://github.com/jansinger/blauwasser-map-plugin/compare/v1.2.8...v1.2.9) (2022-07-10)
 
 ### Bug Fixes
