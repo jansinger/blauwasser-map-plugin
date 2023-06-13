@@ -19,6 +19,7 @@
     "vite": "^3.2.6"
   },
   "dependencies": {
-    "ol": "latest"
+    "ol": "latest",
+    "ol-mapbox-style": "^10.6.0"
   }
 }
