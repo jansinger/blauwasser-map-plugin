@@ -1,5 +1,21 @@
 # Changelog
 
+## [1.4.0](https://github.com/jansinger/blauwasser-map-plugin/compare/v1.3.1...v1.4.0) (2023-06-13)
+
+
+### Features
+
+* use vector maps ([bf49922](https://github.com/jansinger/blauwasser-map-plugin/commit/bf499224439a96d03e96d6ff258937f0c3d7c942))
+
+
+### Bug Fixes
+
+* **deps:** bump ol from 7.3.0 to 7.4.0 ([e21a781](https://github.com/jansinger/blauwasser-map-plugin/commit/e21a7810febce6b9cc39bf8adc00c590e618fdc0))
+* **deps:** bump svelte-check from 3.3.2 to 3.4.3 ([2199d9b](https://github.com/jansinger/blauwasser-map-plugin/commit/2199d9be0361088385468d0e589fce39afdceefd))
+* **deps:** bump svelte-preprocess from 5.0.3 to 5.0.4 ([8ca5d4b](https://github.com/jansinger/blauwasser-map-plugin/commit/8ca5d4bf06712eded2afdc74161246699855f7e5))
+* **deps:** bump typescript from 5.0.4 to 5.1.3 ([1694d39](https://github.com/jansinger/blauwasser-map-plugin/commit/1694d3956c0327a7e91b7ac0fd676e491f0fa593))
+* vite version ([22b7c95](https://github.com/jansinger/blauwasser-map-plugin/commit/22b7c958dadae278e327188ec24cebb433ec442e))
+
 ## [1.3.1](https://github.com/jansinger/blauwasser-map-plugin/compare/v1.3.0...v1.3.1) (2023-05-12)
 
 
