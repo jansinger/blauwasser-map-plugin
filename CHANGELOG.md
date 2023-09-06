@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.4.4](https://github.com/jansinger/blauwasser-map-plugin/compare/v1.4.3...v1.4.4) (2023-09-06)
+
+
+### Bug Fixes
+
+* **deps:** bump archiver from 6.0.0 to 6.0.1 ([08d6693](https://github.com/jansinger/blauwasser-map-plugin/commit/08d66932e3a09effed3785999b9189911da16819))
+* **deps:** bump ol from 7.5.1 to 8.0.0 ([4621581](https://github.com/jansinger/blauwasser-map-plugin/commit/462158154df093c4a0a0445fdc9102a648eb96ee))
+
 ## [1.4.3](https://github.com/jansinger/blauwasser-map-plugin/compare/v1.4.2...v1.4.3) (2023-08-30)
 
 
