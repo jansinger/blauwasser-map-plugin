@@ -2,7 +2,7 @@
 // x-release-please-start-version
 /**
  * Plugin Name: Blauwasser Maps
- * Version: 1.4.5
+ * Version: 1.4.6
  * Plugin URI: https://www.blauwasser.de/
  * Description: OpenSeaMap & Maptiler Karten für blauwasser.de.
  * Author: Jan Singer
@@ -15,7 +15,7 @@
  *
  * @package WordPress
  * @author Jan Singer
- * @since 1.4.5
+ * @since 1.4.6
  */
 
 // If this file is called directly, abort.
@@ -25,10 +25,10 @@ if (!defined('WPINC')) {
 
 /**
  * Currently plugin version.
- * Start at version 1.4.5 and use SemVer - https://semver.org
+ * Start at version 1.4.6 and use SemVer - https://semver.org
  * Rename this for your plugin and update it as you release new versions.
  */
-define('BLAUWASSER_MAP_PLUGIN_VERSION', '1.4.5');
+define('BLAUWASSER_MAP_PLUGIN_VERSION', '1.4.6');
 // x-release-please-end
 // Load plugin class files.
 require_once 'includes/class-blauwasser-map-plugin.php';
