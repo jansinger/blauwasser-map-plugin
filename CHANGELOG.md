@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.4.7](https://github.com/jansinger/blauwasser-map-plugin/compare/v1.4.6...v1.4.7) (2023-11-14)
+
+
+### Bug Fixes
+
+* **deps:** bump ol-mapbox-style from 12.0.0 to 12.1.0 ([4265adc](https://github.com/jansinger/blauwasser-map-plugin/commit/4265adcdcbefa80a4f50429551ebd9cfd3677f2e))
+* **deps:** bump svelte-check from 3.5.2 to 3.6.0 ([2878020](https://github.com/jansinger/blauwasser-map-plugin/commit/28780205cd62a9ea3bfbd90f1204255bd48a9a32))
+
 ## [1.4.6](https://github.com/jansinger/blauwasser-map-plugin/compare/v1.4.5...v1.4.6) (2023-09-21)
 
 
