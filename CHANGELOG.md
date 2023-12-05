@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.0](https://github.com/jansinger/blauwasser-map-plugin/compare/v1.4.8...v1.5.0) (2023-12-05)
+
+
+### Features
+
+* use ESM build ([d185bbc](https://github.com/jansinger/blauwasser-map-plugin/commit/d185bbcc95d82354a6584f1a58705f15ceb5ebaa))
+
 ## [1.4.8](https://github.com/jansinger/blauwasser-map-plugin/compare/v1.4.7...v1.4.8) (2023-12-05)
 
 
