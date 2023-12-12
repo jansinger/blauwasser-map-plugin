@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.5.1](https://github.com/jansinger/blauwasser-map-plugin/compare/v1.5.0...v1.5.1) (2023-12-12)
+
+
+### Bug Fixes
+
+* **deps:** bump typescript from 5.3.2 to 5.3.3 ([861b64b](https://github.com/jansinger/blauwasser-map-plugin/commit/861b64b2836c412956c103a387987aaec4cdb94b))
+* **deps:** bump vite from 5.0.5 to 5.0.6 ([d9fc031](https://github.com/jansinger/blauwasser-map-plugin/commit/d9fc0318b8e15295c6978adaae06a7183d104da9))
+* **deps:** bump vite from 5.0.6 to 5.0.7 ([4b866ee](https://github.com/jansinger/blauwasser-map-plugin/commit/4b866ee64f57ffcbeed25145eaec16f54deae21f))
+
 ## [1.5.0](https://github.com/jansinger/blauwasser-map-plugin/compare/v1.4.8...v1.5.0) (2023-12-05)
 
 
