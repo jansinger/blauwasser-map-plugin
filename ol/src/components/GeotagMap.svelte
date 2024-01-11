@@ -20,7 +20,7 @@
 
   onMount(async () => {
     const projectedCenter = fromLonLat(center ?? settings.center);
-    map = baseMap(mapElement, projectedCenter, zoom);
+    map = await baseMap(mapElement, projectedCenter, zoom);
     ({ layer, point } = movableMarker(projectedCenter));
     layer.setVisible(!!center);
     map.addLayer(layer);

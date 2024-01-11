@@ -2,7 +2,7 @@
   import { baseMap } from "$lib/baseMap";
   import { lang, settings } from "$lib/settings";
   import { fromLonLat, toLonLat } from "ol/proj";
-  import { onMount } from "svelte";
+  import { onDestroy, onMount } from "svelte";
   import type { Map } from "ol";
   import { singleFeature } from "$lib/layers/singlefeature";
   import { defaultMarkerStyle } from "$lib/styles/defaultMarkerStyle";
@@ -23,15 +23,15 @@
   let lat = "-";
   let mapElement: HTMLElement;
   let loadingOverlay: HTMLElement;
-  let layer: ReturnType<typeof singleFeature>;
+  let layer: ReturnType<typeof geojson>;
   let warning = "";
 
   export const updateSize = () => map.updateSize();
 
-  onMount(() => {
+  onMount(async () => {
     loadingOverlay = addLoadingOverlay(mapElement);
     const projectedCenter = fromLonLat(center ?? settings.center);
-    map = baseMap(mapElement, projectedCenter, zoom);
+    map = await baseMap(mapElement, projectedCenter, zoom);
     const style = defaultMarkerStyle(settings.assetsUrl);
     const api = new URL(settings.restApi);
     api.searchParams.set("taxonomies", taxonomies);
@@ -47,7 +47,10 @@
     map.getView().on("change:center", () => {
       center = toLonLat(map.getView().getCenter());
     });
-    return () => map.dispose();
+  });
+
+  onDestroy(() => {
+    map.dispose();
   });
 
   // Update zoom on input change
