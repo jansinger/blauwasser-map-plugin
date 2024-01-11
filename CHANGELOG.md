@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.4](https://github.com/jansinger/blauwasser-map-plugin/compare/v1.5.3...v1.5.4) (2024-01-11)
+
+
+### Bug Fixes
+
+* use vector maps ([cf683b3](https://github.com/jansinger/blauwasser-map-plugin/commit/cf683b342a81efd86a26f06f0e10ba31456ce49a))
+
 ## [1.5.3](https://github.com/jansinger/blauwasser-map-plugin/compare/v1.5.2...v1.5.3) (2024-01-08)
 
 
