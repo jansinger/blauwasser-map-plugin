@@ -1,5 +1,21 @@
 # Changelog
 
+## [1.5.8](https://github.com/jansinger/blauwasser-map-plugin/compare/v1.5.7...v1.5.8) (2024-04-12)
+
+
+### Bug Fixes
+
+* **deps:** bump @sveltejs/vite-plugin-svelte from 3.0.2 to 3.1.0 ([1b17370](https://github.com/jansinger/blauwasser-map-plugin/commit/1b1737057058eab9099bbef0ba3793cc05df64da))
+* **deps:** bump ol from 9.0.0 to 9.1.0 ([a6e0a3e](https://github.com/jansinger/blauwasser-map-plugin/commit/a6e0a3e25532ae6706e3c9daddd59c6d9cfaac55))
+* **deps:** bump ol-mapbox-style from 12.2.1 to 12.3.1 ([d21560e](https://github.com/jansinger/blauwasser-map-plugin/commit/d21560ec97acbe9929d4fc733d6e35ea7109d578))
+* **deps:** bump svelte from 4.2.12 to 4.2.13 ([25dac47](https://github.com/jansinger/blauwasser-map-plugin/commit/25dac4743892a8ceb809a4aaed499bf3bb8a337d))
+* **deps:** bump svelte-check from 3.6.7 to 3.6.8 ([37e9f77](https://github.com/jansinger/blauwasser-map-plugin/commit/37e9f77c252cf1e0c4434e9cca327621b69dea3c))
+* **deps:** bump svelte-check from 3.6.8 to 3.6.9 ([7ba1e45](https://github.com/jansinger/blauwasser-map-plugin/commit/7ba1e4550d76eabc7a60df2699382ded0b301a11))
+* **deps:** bump typescript from 5.4.2 to 5.4.4 ([efe5e68](https://github.com/jansinger/blauwasser-map-plugin/commit/efe5e68e228c6a42d43fc86b07613468d90b036f))
+* **deps:** bump typescript from 5.4.4 to 5.4.5 ([79a8a2b](https://github.com/jansinger/blauwasser-map-plugin/commit/79a8a2b52e95119f7e941d771fd157e344d70770))
+* **deps:** bump vite from 5.1.6 to 5.2.2 ([a9a8173](https://github.com/jansinger/blauwasser-map-plugin/commit/a9a8173bb560dd94282dac18de6d4d02a28575b7))
+* **deps:** bump vite from 5.2.2 to 5.2.8 ([42f274c](https://github.com/jansinger/blauwasser-map-plugin/commit/42f274c0d952cf62b366c3b153ccecccd6b4c0a7))
+
 ## [1.5.7](https://github.com/jansinger/blauwasser-map-plugin/compare/v1.5.6...v1.5.7) (2024-03-13)
 
 
