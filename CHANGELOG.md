@@ -1,5 +1,22 @@
 # Changelog
 
+## [1.5.12](https://github.com/jansinger/blauwasser-map-plugin/compare/v1.5.11...v1.5.12) (2024-07-24)
+
+
+### Bug Fixes
+
+* **deps:** bump @sveltejs/vite-plugin-svelte from 3.1.0 to 3.1.1 ([95973ac](https://github.com/jansinger/blauwasser-map-plugin/commit/95973acf6a475ae0b14666a8a3f0550bd3b57f38))
+* **deps:** bump ol from 9.2.3 to 9.2.4 ([5fa05f7](https://github.com/jansinger/blauwasser-map-plugin/commit/5fa05f7333abd5d4020f9f61940689abf2b81f9a))
+* **deps:** bump ol-mapbox-style from 12.3.2 to 12.3.3 ([f6ad69a](https://github.com/jansinger/blauwasser-map-plugin/commit/f6ad69a52f6f30d04ec9e31dd319aeddac54f494))
+* **deps:** bump svelte from 4.2.17 to 4.2.18 ([879326b](https://github.com/jansinger/blauwasser-map-plugin/commit/879326be3f5fb6bb0299b29f362527aaf6a199bd))
+* **deps:** bump svelte-check from 3.7.1 to 3.8.0 ([fc0d0c8](https://github.com/jansinger/blauwasser-map-plugin/commit/fc0d0c836ddee299bed820e4dd6ef8a7deda682e))
+* **deps:** bump svelte-check from 3.8.0 to 3.8.1 ([11c8110](https://github.com/jansinger/blauwasser-map-plugin/commit/11c81102b85853b36b78ff8c745396a6a5ad2b2e))
+* **deps:** bump svelte-check from 3.8.1 to 3.8.4 ([2898bda](https://github.com/jansinger/blauwasser-map-plugin/commit/2898bdac170a220754d06390520bad122da38919))
+* **deps:** bump svelte-preprocess from 5.1.4 to 6.0.2 ([14903d7](https://github.com/jansinger/blauwasser-map-plugin/commit/14903d742a546863dfbdb4a0164ad7773564d729))
+* **deps:** bump typescript from 5.4.5 to 5.5.4 ([2f2a223](https://github.com/jansinger/blauwasser-map-plugin/commit/2f2a223a8737c3c28643d6c934aed007b12dc8d4))
+* **deps:** bump vite from 5.2.11 to 5.3.1 ([a08a922](https://github.com/jansinger/blauwasser-map-plugin/commit/a08a92292b6c16d6746565352864a32087ff2d45))
+* **deps:** bump vite from 5.3.1 to 5.3.4 ([3b7011a](https://github.com/jansinger/blauwasser-map-plugin/commit/3b7011ab28fc5022086bb3e54547e10ab8ef21a9))
+
 ## [1.5.11](https://github.com/jansinger/blauwasser-map-plugin/compare/v1.5.10...v1.5.11) (2024-05-27)
 
 
