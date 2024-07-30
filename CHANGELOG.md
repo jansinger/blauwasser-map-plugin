@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.5.13](https://github.com/jansinger/blauwasser-map-plugin/compare/v1.5.12...v1.5.13) (2024-07-30)
+
+
+### Bug Fixes
+
+* **deps:** bump ol from 9.2.4 to 10.0.0 ([4a43d88](https://github.com/jansinger/blauwasser-map-plugin/commit/4a43d8836e7a4b8425864bc3dd1255be2ca09e20))
+* **deps:** bump ol-mapbox-style from 12.3.3 to 12.3.4 ([4c4553b](https://github.com/jansinger/blauwasser-map-plugin/commit/4c4553b37c545da65bb2fde698810761008c2ad4))
+* **deps:** bump vite from 5.3.4 to 5.3.5 ([5bbf0a5](https://github.com/jansinger/blauwasser-map-plugin/commit/5bbf0a5fd450fa0f214ec7ae65dfdd03b14bb3ee))
+
 ## [1.5.12](https://github.com/jansinger/blauwasser-map-plugin/compare/v1.5.11...v1.5.12) (2024-07-24)
 
 
