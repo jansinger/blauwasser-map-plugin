@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.5.17](https://github.com/jansinger/blauwasser-map-plugin/compare/v1.5.16...v1.5.17) (2024-10-22)
+
+
+### Bug Fixes
+
+* **deps:** bump @sveltejs/vite-plugin-svelte from 3.1.2 to 4.0.0 ([4746dbc](https://github.com/jansinger/blauwasser-map-plugin/commit/4746dbcdc2317f6f721123f4e9e63b727e74938b))
+* **deps:** bump svelte from 4.2.19 to 5.0.5 ([e110c09](https://github.com/jansinger/blauwasser-map-plugin/commit/e110c09d6ae180e409c861d0f1e7823e4efd7dd1))
+
 ## [1.5.16](https://github.com/jansinger/blauwasser-map-plugin/compare/v1.5.15...v1.5.16) (2024-10-15)
 
 
