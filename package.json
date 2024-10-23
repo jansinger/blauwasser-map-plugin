@@ -17,7 +17,7 @@
     "svelte-check": "^4.0.5",
     "svelte-preprocess": "^6.0.3",
     "typescript": "^5.6.3",
-    "vite": "^5.4.9"
+    "vite": "^5.4.10"
   },
   "dependencies": {
     "ol": "latest",
