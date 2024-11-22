@@ -1,6 +1,6 @@
 {
   "name": "blauwasser-map-plugin",
-  "version": "1.5.18",
+  "version": "1.5.19",
   "type": "module",
   "scripts": {
     "start": "vite --port 3000",
