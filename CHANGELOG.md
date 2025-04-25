@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.21](https://github.com/jansinger/blauwasser-map-plugin/compare/v1.5.20...v1.5.21) (2025-04-25)
+
+
+### Bug Fixes
+
+* **deps:** bump vite from 5.4.11 to 6.3.1 ([c25f57d](https://github.com/jansinger/blauwasser-map-plugin/commit/c25f57da6d2beb611c61f0f86b31ab0daa638e64))
+
 ## [1.5.20](https://github.com/jansinger/blauwasser-map-plugin/compare/v1.5.19...v1.5.20) (2025-04-25)
 
 
